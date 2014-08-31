@@ -4,6 +4,7 @@ var width = w - margin.right - margin.left;
 var height = h - margin.right - margin.left;
 var mindomain_bg = 0, maxdomain_bg = 0.1;
 var mindomain_pc = 0, maxdomain_pc = 100;
+var budget_axis = "Percent of total budget", population_axis = "Fine per capita (rands)";
 
 var selectWidget = d3.select('select.city');
 var provinceWidget = d3.select('select.province');
@@ -54,7 +55,9 @@ var yAxisGeneratorView0 = d3.svg.axis()
 var yAxisGeneratorView1 = d3.svg.axis()
     .orient('left')
     .tickSize(-width)
-    .tickFormat(d3.format(','))
+    .tickFormat(function(x) {
+        return "R" + d3.format(',')(x);
+    })
     .scale(yView1);
 
 yActiveProperty = function(year) {
@@ -91,7 +94,6 @@ var data = d3.csv('budgetnorm.csv')
         var national_average = _.find(rows, function(d) {
             return d.citySlug === 'Summary';
         });
-        console.log(national_average);
 
         _.each(rows, function(d) {
             selectWidget.append('option')
@@ -117,7 +119,7 @@ var data = d3.csv('budgetnorm.csv')
             .attr("y", 6)
             .attr("dy", "-3em")
             .attr("transform", "rotate(-90)")
-            .text("Percentage of total budget");
+            .text(budget_axis);
 
         var axes = svg.append('g')
             .attr('class', 'axes');
@@ -205,6 +207,7 @@ var data = d3.csv('budgetnorm.csv')
         }
 
         var draw = function(view, initialCall) {
+            console.log("Drawing");
             isTransitioning = true;
 
             d3.selectAll('.annotations .view-0, .annotations .view-1, .annotations .view-2')
@@ -217,12 +220,14 @@ var data = d3.csv('budgetnorm.csv')
                 yActiveProperty = function(year) {
                     return 'r' + year;
                 };
+                d3.select(".yaxis").text(budget_axis);
             } else if (view == POPULATION_VIEW) {
                 yActiveScale = yView1; /* ????? */
                 axisGeneratorView = yAxisGeneratorView1;
                 yActiveProperty = function(year) {
                     return 'p' + year;
                 };
+                d3.select(".yaxis").text(population_axis);
             }
 
 
