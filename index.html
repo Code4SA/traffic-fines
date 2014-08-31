@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<div id="wholePage">
+
+    <!-- Header [Start] -->
+    <div id="header" class="clearfix subSectionHeader  ">
+
+        <!-- Main Body Content [Start] -->
+        <div id="mainContentWraper">
+
+            <link rel="stylesheet" href="base.css">
+
+            <h2>Fine revenues per municipality</h2>
+            <div class="intro">
+                Fine revenues from municipality budgets by quarter. We have always suspected that speed traps are a money making raquet, use this tool to find out how much your municipality is making from fines.
+                <div class="footnote">Note that values are capped at 10%</div>
+                
+            </div>
+        <div class="col2">
+            <div class="controls">
+                Select a Province: <br/>
+                <select class="province">
+                    <option value="ALL">None</option>
+                    <option value="WC">Western Cape</option>
+                    <option value="EC">Eastern Cape</option>
+                    <option value="NC">Northern Cape</option>
+                    <option value="FS">Free State</option>
+                    <option value="GT">Gauteng</option>
+                    <option value="NW">North West</option>
+                    <option value="MP">Mpumalanga</option>
+                    <option value="LM">Limpopo</option>
+                    <option value="KZ">KwaZulu Natal</option>
+                </select>
+            </div>
+            <div class="controls">Select a Municipality: <select class="city"></select></div>
+        </div>
+
+            <div class="col1">
+
+                <div class='buttons no-select'>
+                    <div class='button first active' data-view='0'>% of Budget</div>
+                    <div class='button' data-view='1'>Per Capita</div>
+                    <div class='clear'></div>
+                </div>
+
+                <div class="chart-wrapper">
+                    <div class="chart no-select"></div>
+                    <div class="tooltip" style="top: 147.66666666666669px;">
+                        <div class="tooltip-triangle-outer"></div>
+                        <div class="tooltip-triangle-inner"></div>
+                        <div class="city">Municipality</div>
+                        <div class="section">Fines as % of revenue: <span class="fines"></span></div>
+                        <div class="section">Population: <span class="population"></span></div>
+                        <div class="section"><span class="relative-rate-2013"> <span class="worse">X times higher</span> than the national average.</span></div>
+<!--
+                        <div class="section"><span class="against-average-change-2013">Housing prices are performing <span class="worse">4 percent worse</span> than the county average since 2007.</span></div>
+-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- [if IE]><!-->
+<script src="d3.v3.js" type="text/javascript" charset="utf-8"></script>
+<script src="underscore-min.js" type="text/javascript" charset="utf-8"></script>
+<script src="base.js" type="text/javascript" charset="utf-8"></script>
+<!--<![endif]-->
+
+
+
+    </div>
+
+</div>
+<!-- Main Body Content [End] -->
+
+</div>
+
+

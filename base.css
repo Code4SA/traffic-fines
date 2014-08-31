@@ -1,0 +1,225 @@
+.clear {
+  clear: both;
+}
+
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+h2 {
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+  line-height: 36px;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.intro {
+  font-family: Georgia, serif;
+  font-size: 14px;
+  line-height: 18px;
+  width: 550px;
+  color: #333;
+  margin: 0 auto 40px auto;
+}
+
+.col1 {
+  float: left;
+  width: 594px;
+  margin-left: 70px;
+}
+.col2 {
+  float: left;
+  width: 150px;
+}
+
+.footnote {
+    font-size: 0.65em;
+}
+
+.buttons {
+  margin-top: 5px;
+  margin-left: 130px;
+  margin-bottom: 10px;
+}
+.button {
+  float: left;
+  height: 30px;
+  width: 130px;
+  background-color: #465A99;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #fff;
+  border-right: 1px solid #fff;
+  text-align: center;
+  cursor: pointer;
+}
+.button:hover, .button.active {
+  background-color: #333;
+}
+.button.active {
+  cursor: default;
+}
+.button.first {
+  border-radius: 5px 0 0 5px;
+}
+.button.last {
+  border-radius: 0 5px 5px 0;
+  border-right: none;
+}
+
+.controls {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #333;
+  fill: #333;
+}
+
+.chart-wrapper {
+  position: relative;
+}
+.tooltip {
+  position: absolute;
+  top: 302.5px;
+  left: 820px;
+  font-family: Arial,Verdana,Helvetica,sans-serif; 
+  font-size: 13px;
+  color: #333;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 175px;
+  -moz-box-shadow: 3px 3px 5px 0px #333;
+  -webkit-box-shadow: 3px 3px 5px 0px #333;
+  box-shadow: 3px 3px 5px 0px #333;
+}
+.tooltip-triangle-outer {
+  position: absolute;
+  top: 27px;
+  left: -10px;
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-right: 10px solid #ccc;
+}
+.tooltip-triangle-inner {
+  position: absolute;
+  top: 29px;
+  left: -9px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 9px solid #fff;
+}
+.tooltip .section {
+  margin: 6px 0;
+}
+.tooltip .city {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.tooltip .rate-2013 {
+  font-weight: bold;
+}
+.tooltip .better {
+  color: #627A62;
+  font-weight: bold;
+}
+.tooltip .worse {
+  color: #A33838;
+  font-weight: bold;
+}
+.tooltip .average {
+  font-weight: bold;
+}
+
+.home-rate {
+  fill: none;
+  stroke: #465070;
+  stroke-width: 1px;
+  stroke-opacity: 0.2;
+}
+.home-rate-hover {
+  stroke-width: 3px;
+  stroke-opacity: 0.5;
+}
+
+.home-rate-selected {
+  stroke-width: 3px;
+  stroke-opacity: 1.0;
+}
+
+.home-province {
+  stroke: #f00;
+  stroke-width: 2px;
+  stroke-opacity: 0.3;
+}
+
+.home-rate-selected.home-province {
+  stroke-opacity: 1.0;
+}
+
+.axes {
+  stroke: #ccc;
+  stroke-dasharray: 1, 5;
+  fill: none;
+  shape-rendering: crispEdges;
+}
+.axes .domain {
+  stroke: none;
+}
+.xAxis .tick {
+  stroke: none;
+}
+.axes text, .annotations text {
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  stroke: none;
+  fill: #333;
+}
+
+.annotations {
+  pointer-events: none;
+}
+.annotations .baseline {
+  stroke: #333;
+  shape-rendering: crispEdges;
+}
+.annotations .leader {
+  stroke: #666;
+  shape-rendering: crispEdges;
+}
+
+.byline, .disclaimer, .source {
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  color: #666;
+  margin: 4px 10px;
+}
+.byline {
+  color: #333;
+}
+
+.fallback {
+  display: none;
+}
+.fallback-info {
+  width: 750px;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  background-color: #AAC2AF;
+  margin: 30px 10px;
+}
+
