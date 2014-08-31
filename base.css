@@ -145,7 +145,8 @@ h2 {
 
 .home-rate {
   fill: none;
-  stroke: #465070;
+  /*stroke: #465070;*/
+  stroke: #8C96B9;
   stroke-width: 1px;
   stroke-opacity: 0.2;
 }
@@ -166,7 +167,13 @@ h2 {
 }
 
 .home-rate-selected.home-province {
-  stroke-opacity: 1.0;
+    stroke-opacity: 1.0;
+}
+
+.home-rate-Summary {
+    stroke: #7A6565;
+    stroke-opacity: 1.0;
+    stroke-width: 3px;
 }
 
 .axes {
