@@ -219,6 +219,8 @@ h2 {
 
 .buttons {
     float:right;
+    position: relative;
+    top: -20px;
 }
 
 .button {
@@ -262,19 +264,25 @@ h2 {
     position: relative;
     margin-top: 45px;
 }
-.tooltip {
-  position: absolute;
-  top: 302.5px;
-  left: 820px;
-  font-family: Arial,Verdana,Helvetica,sans-serif; 
-  font-size: 13px;
-  color: #333;
-  padding: 10px;
-  border: 1px solid #ccc;
-  width: 175px;
-  -moz-box-shadow: 3px 3px 5px 0px #333;
-  -webkit-box-shadow: 3px 3px 5px 0px #333;
-  box-shadow: 3px 3px 5px 0px #333;
+
+.chart {
+    position: relative;
+    left: -50px;
+}
+.munic-tooltip {
+    position: absolute;
+    top: 10px;
+    left: 765px;
+    font-family: Arial,Verdana,Helvetica,sans-serif; 
+    font-size: 13px;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 175px;
+
+    -moz-box-shadow: 3px 3px 5px 0px #333;
+    -webkit-box-shadow: 3px 3px 5px 0px #333;
+    box-shadow: 3px 3px 5px 0px #333;
 }
 .tooltip-triangle-outer {
   position: absolute;
@@ -296,27 +304,29 @@ h2 {
   border-bottom: 10px solid transparent;
   border-right: 9px solid #fff;
 }
-.tooltip .section {
+.munic-tooltip .section {
   margin: 6px 0;
 }
-.tooltip .city {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  text-align: center;
-  margin-bottom: 10px;
+.munic-tooltip .city {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
 }
-.tooltip .rate-2013 {
+.munic-tooltip .rate-2013 {
   font-weight: bold;
 }
-.tooltip .better {
+.munic-tooltip .better {
   color: #627A62;
   font-weight: bold;
 }
-.tooltip .worse {
+.munic-tooltip .worse {
   color: #A33838;
   font-weight: bold;
 }
-.tooltip .average {
+.munic-tooltip .average {
   font-weight: bold;
 }
 

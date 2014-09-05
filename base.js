@@ -9,8 +9,8 @@ var budget_axis = "Percent of total budget", population_axis = "Fine per capita 
 var selectWidget = d3.select('select.city');
 var provinceWidget = d3.select('select.province');
 
-var tooltip = d3.select('.chart-wrapper .tooltip');
-var tooltipFines = d3.select('.tooltip .fines');
+var tooltip = d3.select('.chart-wrapper .munic-tooltip');
+var tooltipFines = d3.select('.munic-tooltip .fines');
 var tooltipCity = tooltip.select('.city');
 var tooltipRate2013 = tooltip.select('.rate-2013');
 var tooltipRelativeRate2013 = tooltip.select('.relative-rate-2013');
@@ -314,7 +314,7 @@ var data = d3.csv('budgetnorm.csv')
         if (d[val] > 0.1)
             d[val] = 0.1;
         
-        tooltip.style('top', (yView0(d[val]) - 30) + 'px');
+        //tooltip.style('top', (yView0(d[val]) - 30) + 'px');
 
         tooltipCity.text(d.city);
 
