@@ -1,3 +1,178 @@
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.428;
+    color: #333;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: black;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+#page {
+    border: 1px solid #999;
+    padding: 10px;
+    width: 970px;
+}
+
+
+
+#shell {
+    width: 972px;
+    margin: 50px auto;
+    text-align: left;
+}
+
+div#main {
+    border-top: 1px solid #fff;
+    clear: both;
+    padding: 0 0 7px 0;
+}
+
+.module {
+    margin-bottom: 12px;
+}
+
+.storyHeader {
+    margin-bottom: 6px;
+    font-family: "Times New Roman", serif;
+}
+
+.storyHeader h1 {
+    font-weight: normal;
+}
+
+#interactiveMain {
+    width: 950px;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+
+.ink {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.stepper {
+    display: block;
+    position: relative;
+    height: 28px;
+    margin: 8px 0 0;
+    padding: 8px 0 0;
+}
+
+.stepperButton:hover {
+    text-decoration: none;
+    background-color:#064D84;
+}
+
+.stepperButton {
+    padding: 0 12px;
+    margin: 0;
+    display: block;
+    color: white;
+    text-decoration: none solid rgb(255, 255, 255);
+    border-radius: 2px;
+    font-size: 14px;
+    line-height: 30px;
+    height: 28px;
+    outline: none;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto;
+}
+
+a.stepperButton:hover {
+    color: white;
+}
+
+.stepper-previous {
+    float: left;
+    margin-right: 4px;
+    padding-left: 26px;
+    background: #004276 url("whiteArrow-left.png") no-repeat 2px center;
+    
+}
+
+.stepper-next {
+    float: left;
+    padding-right: 26px;
+    background: #004276 url("whiteArrow-right.png") no-repeat 42px center;
+}
+
+.stepper-disabled {
+    background-color: #c2cdd6;
+}
+
+.stepper-disabled:hover {
+    background-color: #c2cdd6;
+}
+
+.steps {
+    margin: 0 0 0 10px;
+    padding: 0;
+    display: block;
+    float: left;
+}
+
+.step {
+    font-size: 13px;
+    background-image: none;
+    list-style-type: none;
+    cursor: pointer;
+    display: block;
+    float: left;
+    padding: 0 7px;
+    margin: 7px 0;    
+}
+
+.step a {
+    color: #aaa;
+}
+
+.step-selected a {
+    color: #000;    
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+
+.step-last {
+    border-right: none;
+}
+
+p, li, dt, dd {
+    line-height: 1.25em;
+}
+
+.line {
+    border: 1px #000 solid;
+}
+
+.canvas-wrap {
+    position: relative;
+    border-top: 1px #000 solid;
+    padding-top: 0px;
+    margin: 12px 0;
+    padding: 0 10px;
+
+}
+
+.explainer {
+    top: 30px;
+    width: 365px;
+    color: #000;
+    position: relative;
+}
+
+
 .clear {
   clear: both;
 }
@@ -9,6 +184,18 @@
   -ms-user-select: none;
 }
 
+.tabContent.active {
+    display: block;
+}
+
+.tabContent {
+    clear: both;
+    border: 1px solid #ccc;
+    padding: 7px;
+    display: none;
+}
+
+/*
 h2 {
   font-family: Arial, sans-serif;
   font-size: 32px;
@@ -18,34 +205,22 @@ h2 {
   margin-top: 20px;
   margin-bottom: 10px;
 }
-.intro {
-  font-family: Georgia, serif;
-  font-size: 14px;
-  line-height: 18px;
-  width: 800px;
-  color: #333;
-  margin: 0 auto 40px auto;
-}
+*/
 
-.col1 {
-  float: left;
-  width: 594px;
-  margin-left: 70px;
-}
 .col2 {
   float: left;
   width: 150px;
 }
+*/
 
 .footnote {
     font-size: 0.65em;
 }
 
 .buttons {
-  margin-top: 5px;
-  margin-left: 130px;
-  margin-bottom: 10px;
+    float:right;
 }
+
 .button {
   float: left;
   height: 30px;
@@ -75,15 +250,17 @@ h2 {
 }
 
 .controls {
-  font-family: Arial, sans-serif;
-  font-size: 13px;
-  font-weight: bold;
-  color: #333;
-  fill: #333;
+    display: none;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 5px;
 }
 
 .chart-wrapper {
-  position: relative;
+    position: relative;
+    margin-top: 45px;
 }
 .tooltip {
   position: absolute;

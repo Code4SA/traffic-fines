@@ -1,5 +1,5 @@
 var margin = { top: 10, right: 20, bottom: 10, left: 80 };
-var w = 900, h = 500;
+var w = 900, h = 350;
 var width = w - margin.right - margin.left;
 var height = h - margin.right - margin.left;
 var mindomain_bg = 0, maxdomain_bg = 0.1;
