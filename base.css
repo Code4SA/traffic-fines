@@ -168,8 +168,13 @@ p, li, dt, dd {
 .explainer {
     top: 30px;
     width: 365px;
+    height: 76px;
     color: #000;
     position: relative;
+}
+
+.explainer-2, .explainer-3, .explainer-4, .explainer-5 {
+    display: none;
 }
 
 
@@ -272,13 +277,14 @@ h2 {
 .munic-tooltip {
     position: absolute;
     top: 10px;
-    left: 765px;
+    left: 768px;
     font-family: Arial,Verdana,Helvetica,sans-serif; 
     font-size: 13px;
     color: #333;
     padding: 10px;
     border: 1px solid #ccc;
-    width: 175px;
+    width: 170px;
+    height: 250px;
 
     -moz-box-shadow: 3px 3px 5px 0px #333;
     -webkit-box-shadow: 3px 3px 5px 0px #333;

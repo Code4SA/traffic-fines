@@ -23,16 +23,27 @@
                     <a href="#" class="stepperButton stepper-previous stepper-disabled">Prev</a>
                     <a href="#" class="stepperButton stepper-next">Next</a>
                     <ul class="steps">
-                        <li class="step step-selected" data-index="0"><a href="#">1</a></li>
-                        <li class="step" data-index="0"><a href="#">2</a></li>
-                        <li class="step" data-index="0"><a href="#">3</a></li>
-                        <li class="step" data-index="0"><a href="#">4</a></li>
-                        <li class="step step-last" data-index="0"><a href="#">5</a></li>
+                        <li class="step step-1 step-selected" data-index="0"><a href="#">1</a></li>
+                        <li class="step step-2" data-index="0"><a href="#">2</a></li>
+                        <li class="step step-3" data-index="0"><a href="#">3</a></li>
+                        <li class="step step-4" data-index="0"><a href="#">4</a></li>
+                        <li class="step step-5 step-last" data-index="0"><a href="#">5</a></li>
                     </ul>
                 </div>
                 <div class="canvas-wrap">
-                    <div class="explainer">
+                    <div class="explainer explainer-1">
 Municipalities have budgeted R1.7 billion in revenues for the 2014 financial year. Nationwide municipalities have earned over R6 billion rand since July 2011. Have a look below at the revenue earned from each municipality.
+                    </div>
+                    <div class="explainer explainer-2">
+                    Let's take a look at only municipalities in the Western Cape. Two municipalities seem to stick out, Laingsburg and Beaufort West.
+                    </div>
+                    <div class="explainer explainer-3">What if we just highlighted only those municipalities through which the N1 passes?
+                    </div>
+                    <div class="explainer explainer-4">
+                    In order not to distort that graphs, we clamped the upper values in the previous slides. Let's show the graph at full-scale. Notice Ubuntu municipality. They seem to have turned speeding fines into big business. 17% of their revenue comes from fines!
+                    </div>
+                    <div class="explainer explainer-5">Blah 5
+t
                     </div>
                     <div class='buttons no-select'>
                         <div class='button first active' data-view='0'>% of Budget</div>
@@ -56,35 +67,14 @@ Municipalities have budgeted R1.7 billion in revenues for the 2014 financial yea
                         </div>
                     </div>
                 </div>
-<!--
-            <div class="col2">
-                <div class="controls">
-                    Select a Province: <br/>
-                    <select class="province">
-                        <option value="ALL">None</option>
-                        <option value="WC">Western Cape</option>
-                        <option value="EC">Eastern Cape</option>
-                        <option value="NC">Northern Cape</option>
-                        <option value="FS">Free State</option>
-                        <option value="GT">Gauteng</option>
-                        <option value="NW">North West</option>
-                        <option value="MP">Mpumalanga</option>
-                        <option value="LM">Limpopo</option>
-                        <option value="KZ">KwaZulu Natal</option>
-                    </select>
-                </div>
-                <div class="controls">Select a Municipality: <select class="city"></select></div>
-            </div>
--->
-
 
                     <div class="chart-wrapper">
                         <div class="chart no-select"></div>
                         <div class="munic-tooltip">
                             <div class="city">Municipality</div>
-                            <div class="section">% of revenue: <span class="fines"></span></div>
+                            <div class="section"><span class="fines"></span>% of revenue</div>
                             <div class="section">Population: <span class="population"></span></div>
-                            <div class="section"><span class="relative-rate-2013"> <span class="worse">X times higher</span> than the national average.</span></div>
+                            <div class="section"><span class="times-national"> <span class="compare-national worse">X times higher</span> than the national average.</span></div>
                         </div>
                     </div>
 
