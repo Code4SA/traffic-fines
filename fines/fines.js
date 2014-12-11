@@ -19,7 +19,9 @@ var width = 60, height = 60, max_radius = 30, min_radius = 2;
 
 var PieChart = function(el, datum) {
     this.data = datum;
+    this.click_observers = [];
 
+    var me = this;
     var ratio = datum["Total Fines"] / datum["Total Budget"]
     var values = [ratio, 1 - ratio];
     var pie = d3.layout.pie();
@@ -47,11 +49,9 @@ var PieChart = function(el, datum) {
         .attr("transform", function(el, i) {
             return "translate(" + width/2 + ", " + height/2 + ")"
         })
-        .on("click", function(el) {
-            pie_charts.highlight_province(datum["Province"])  
-            d3.select("#detail p").remove()
-            d3.select("#detail").append("p").text(datum["Municipality"]);
-            console.log(datum["Municipality"])
+        .on("click", function(el, idx) {
+            console.log(datum);
+            me.onClick(datum, idx);
         })
         .style("cursor", "pointer")
 };
@@ -60,6 +60,12 @@ PieChart.prototype = {
     highlight : function(fine_slice_col, other_slice_col) {
         d3.select(this.element[0][0]).style("fill", fine_slice_col)
         d3.select(this.element[0][1]).style("fill", other_slice_col)
+    },
+    onClick : function(datum, idx) {
+        for (oidx in this.click_observers) {
+            var o = this.click_observers[oidx];
+            o(datum, idx);
+        }
     }
 }
 

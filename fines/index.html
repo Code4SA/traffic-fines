@@ -21,6 +21,13 @@
     <script>
         var pie_charts = new FinePieCharts();
 
+        var click_observer = function(el, idx) {
+            pie_charts.highlight_province(el["Province"])  
+            d3.select("#detail p").remove()
+            d3.select("#detail").append("p").text(el["Municipality"]);
+            console.log(el["Municipality"])
+        }
+
         d3.csv("data.csv", function(pie_data) {
             var charts = d3.select("#pies")
                 .selectAll("svg")
@@ -31,6 +38,7 @@
                         .attr("height", height)
                         .each(function(el) {
                             a = new PieChart(d3.select(this), el);
+                            a.click_observers.push(click_observer);
                             pie_charts.addChart(a);
                         });
             pie_charts.highlight_province("NC");
