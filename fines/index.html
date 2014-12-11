@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="base.css">
+    </head>
+<body>
+    <h1>Fines as a % of budget</h1>
+
+    <div class="row">
+        <div id="pies" class="col-md-8"></div>
+        <div class="col-md-4">
+            <div id="provinces"></div>
+            <div id="detail"></div>
+        </div>
+    </div>
+
+    <!-- [if IE]><!-->
+    <script src="d3.v3.js" type="text/javascript" charset="utf-8"></script>
+    <script src="fines.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        var pie_charts = new FinePieCharts();
+
+        d3.csv("data.csv", function(pie_data) {
+            var charts = d3.select("#pies")
+                .selectAll("svg")
+                .data(pie_data)
+                .enter()
+                    .append("svg")
+                        .attr("width", width)
+                        .attr("height", height)
+                        .each(function(el) {
+                            a = new PieChart(d3.select(this), el);
+                            pie_charts.addChart(a);
+                        });
+            pie_charts.highlight_province("NC");
+        });
+
+        d3.select("#provinces").selectAll("p")
+            .data(provinces)
+            .enter().append("p").append("a")
+                .text(function(el) { return el.name})
+                .style("cursor", "pointer")
+                .on("click", function(el) {
+                    pie_charts.highlight_province(el.code);
+                });
+
+        d3.select("#provinces")
+            .append("p").append("a")
+                .text("N1")
+                .style("cursor", "pointer")
+                .on("click", function(el) {
+                    pie_charts.highlight_set(n1_munics);
+                });
+            
+    </script>
+    <!--<![endif]-->
+</body>
+</html>
