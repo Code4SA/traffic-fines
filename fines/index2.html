@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="base.css">
+    </head>
+<body>
+    <div class="container">
+        <h1>Fines as a % of budget</h1>
+
+        <div class="row">
+            <h2>Cape Town -> Johannesburg</h2>
+        </div>
+
+        <div class="row">
+            <div id="jhbcpt" class="col-md-12"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div id="pie_label" class="col-md-8"></div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+    <!-- [if IE]><!-->
+    <script src="d3.v3.js" type="text/javascript" charset="utf-8"></script>
+    <script src="fines.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        var pie_charts = new FinePieCharts();
+        var click_pie = function(el, idx) {
+            d3.select("#pie_label").selectAll("p").remove()    
+            d3.select("#pie_label").append("p").text(el["Municipality"]);
+        }
+
+        d3.csv("data.csv", function(pie_data) {
+            munic_pies = [];
+            for (idx in pie_data) {
+                datum = pie_data[idx]
+                munic_code = datum["Municipality"]
+                if (n1_munics.indexOf(munic_code) >= 0) {
+                    munic_pies.push(datum);
+                }
+            }
+            munic_pies = munic_pies.sort(function(a, b) {
+                m1 = a["Municipality"];
+                m2 = b["Municipality"];
+                idx1 = n1_munics.indexOf(m1);
+                idx2 = n1_munics.indexOf(m2);
+                return idx1 - idx2;
+            })
+
+            var charts = d3.select("#jhbcpt")
+                .selectAll("svg")
+                .data(munic_pies)
+                .enter()
+                    .append("svg")
+                        .attr("width", width)
+                        .attr("height", height)
+                        .each(function(el) {
+                            munic_code = el["Municipality"]
+                            if (cpt_jhb.indexOf(munic_code) >= 0) {
+                                a = new PieChart(d3.select(this), el);
+                                a.click_observers.push(click_pie);
+                                pie_charts.addChart(a);
+                            }
+                        });
+                
+                nc_paths = d3.selectAll("path[data-province='NC']")
+                console.log(nc_paths);
+                pie_charts.highlight_set(nc_paths, "#ababab", "#ff0000");
+        });
+
+    </script>
+    <!--<![endif]-->
+</body>
+</html>

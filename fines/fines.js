@@ -15,7 +15,12 @@ var n1_munics = [
     "TSH", "LIM366", "LIM365", "LIM364", "LIM367", "LIM354", "LIM353",
     "LIM344", "LIM341"
 ]
-var width = 60, height = 60, max_radius = 30, min_radius = 2;
+
+var cpt_jhb = [
+    "CPT", "WC023", "WC025", "WC051", "WC053", "NC071", "NC073", "NC072", 
+    "FS162", "MAN", "FS181", "FS184", "FS201", "FS203", "GT421", "JHB"
+]
+var width = 70, height = 70, max_radius = 30, min_radius = 2, margin = 5;
 
 var PieChart = function(el, datum) {
     this.data = datum;
@@ -46,11 +51,11 @@ var PieChart = function(el, datum) {
             if (i == 0) return "fine-slice"
             return "other-slice";
         })
+        .attr("data-province", datum["Province"])
         .attr("transform", function(el, i) {
-            return "translate(" + width/2 + ", " + height/2 + ")"
+            return "translate(" + (width/2 + margin) + ", " + (height/2 + margin) + ")"
         })
         .on("click", function(el, idx) {
-            console.log(datum);
             me.onClick(datum, idx);
         })
         .style("cursor", "pointer")
@@ -86,10 +91,10 @@ FinePieCharts.prototype = {
             }
         }
     },
-    highlight_set : function(set) {
+    highlight_set : function(set, fine_slice_col, other_slice_col) {
         for (var p in this.pies) {
             var pie = this.pies[p];
-            pie.highlight("#bbbbbb", "#bbbbbb");
+            pie.highlight(fine_slice_col, other_slice_col);
             munic = pie.data["Municipality"]
             if (set.indexOf(munic) > 0)
                 pie.highlight("#ff0000", "rgb(115, 170, 238)");

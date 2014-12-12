@@ -25,7 +25,6 @@
             pie_charts.highlight_province(el["Province"])  
             d3.select("#detail p").remove()
             d3.select("#detail").append("p").text(el["Municipality"]);
-            console.log(el["Municipality"])
         }
 
         d3.csv("data.csv", function(pie_data) {
@@ -58,7 +57,7 @@
                 .text("N1")
                 .style("cursor", "pointer")
                 .on("click", function(el) {
-                    pie_charts.highlight_set(n1_munics);
+                    pie_charts.highlight_set(n1_munics, "#bbbbbb", "#bbbbbb");
                 });
             
     </script>
