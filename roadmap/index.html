@@ -40,97 +40,14 @@
 
     <!-- [if IE]><!-->
     <script src="d3.v3.js" type="text/javascript" charset="utf-8"></script>
-    <script src="labeler.js" type="text/javascript" charset="utf-8"></script>
+    <script src="lookups.js" type="text/javascript" charset="utf-8"></script>
+    <script src="municipalities.js" type="text/javascript" charset="utf-8"></script>
+    <script src="bubbles.js" type="text/javascript" charset="utf-8"></script>
+    <script src="layouts.js" type="text/javascript" charset="utf-8"></script>
+    <script src="roadlayout.js" type="text/javascript" charset="utf-8"></script>
     <script src="fines.js" type="text/javascript" charset="utf-8"></script>
     <script>
-        var min_radius = 2;
-        var max_radius = 150;
-        var width = "100%", height = 200;
 
-        var click_pie = function(el, idx) {
-            d3.select("#pie_label").selectAll("p").remove()    
-            d3.select("#pie_label").append("p").text(el["Name"]);
-        }
-
-        MunicBubble.prototype.style = function() {
-            this.element.select("circle")
-                .style("fill", "#ff2b2b")
-                .style("stroke", "#343434")
-                .style("stroke-width", "1.0")
-                .style("cursor", "pointer")
-
-            this.element.selectAll("text")
-                .style("font-family", "'Helvetica Neue', Helvetica, Arial, sans-serif")
-                .style("cursor", "pointer")
-
-            return this;
-        }
-
-        RoadLayout.prototype.style = function() {
-            this.element.selectAll(".road")
-                .style("stroke", "#343434")
-                .style("stroke-width", "2")
-                .style("fill", "#000000")
-
-            this.element.selectAll("rect[data-province=" + "WC" + "]")
-                .style("fill", "#435678")
-                .style("opacity", "0.4")
-            this.element.selectAll("rect[data-province=" + "NC" + "]")
-                .style("fill", "#862346")
-                .style("opacity", "0.4")
-            this.element.selectAll("rect[data-province=" + "FS" + "]")
-                .style("fill", "#125743")
-                .style("opacity", "0.4")
-            this.element.selectAll("rect[data-province=" + "GT" + "]")
-                .style("fill", "#642376")
-                .style("opacity", "0.4")
-            this.element.selectAll("rect[data-province=" + "EC" + "]")
-                .style("fill", "#73418")
-                .style("opacity", "0.4")
-            this.element.selectAll("rect[data-province=" + "KZN" + "]")
-                .style("fill", "#bac423")
-                .style("opacity", "0.4")
-            this.element.selectAll("rect[data-province=" + "MP" + "]")
-                .style("fill", "#b168af")
-                .style("opacity", "0.4")
-        }
-
-        var bubblefactory = function(relative, min_radius, max_radius) {
-            return function(root, datum) {
-                return new MunicBubble(root, datum, relative, min_radius, max_radius)
-                    .style()
-                    .addClickObserver(click_pie);
-            }
-        }
-
-        var add_route = function(route, row, national_average) {
-            var charts = row
-                    .append("svg")
-                        .attr("width", width)
-                        .attr("height", height)
-
-            var road_layout = new RoadLayout({
-                factory : bubblefactory(national_average, min_radius, max_radius),
-                data : route.munics,
-                height : height,
-                width : width
-            }, charts)
-
-            return road_layout;
-        }
-
-        d3.csv("data.csv", function(data) {
-            var municipalities = new Municipalities(data);
-            console.log(municipalities);
-            var natdata = municipalities.subset(["Summary"]).munics[0];
-            var national_ratio = (natdata["Total Fines"] / natdata["Total Budget"]) * 100;
-
-            add_route(municipalities.subset(n1_cpt_jhb), d3.select("#n1-jhbcpt"), national_ratio);
-            add_route(municipalities.subset(n2_cpt_plet), d3.select("#n2-cptplet"), national_ratio);
-            add_route(municipalities.subset(n3_jhb_eth), d3.select("#n3-jhbeth"), national_ratio);
-        });
-
-    </script>
     <!--<![endif]-->
 </body>
 </html>
