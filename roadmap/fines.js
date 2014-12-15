@@ -1,6 +1,6 @@
 var min_radius = 2;
 var max_radius = 150;
-var width = "100%", height = 200;
+var width = "100%", height = 200
 
 d3.selection.prototype.moveToFront = function() {
   return this.each(function(el) {
@@ -49,32 +49,70 @@ roadlayout.RoadLayout.prototype.style = function() {
     }
 }
 
-layout_factory = roadmap.layouts.factories.VerticalLayoutFactory;
-layout_factory = roadmap.layouts.factories.HorizontalLayoutFactory;
 
-var add_route = function(route, row, national_average) {
-    var charts = row
-            .append("svg")
-                .attr("width", width)
-                .attr("height", height)
+var add_route = function(layout_factory, width, height, route, row, national_average) {
+    if (roadmap.orientation == "H") {
+        view_width = width;
+        view_height = height;
+    }
+    else {
+        view_width = height;
+        view_height = width;
+    }
+
+    var charts = row.append("svg")
+        .attr("width", "100%")
+        .attr("height", "100%")
+        .attr("viewBox", "0 0 " + view_width + " " + view_height)
+        .attr("preserveAspectRatio", "xMinYMax meet")
+        .classed("roadmap", true)
 
     var road_layout = new roadlayout.RoadLayout({
         bubble_factory : layout_factory.bubblefactory(national_average, min_radius, max_radius),
         roadmap_layout_factory : layout_factory.map,
         data : route.munics,
         height : height,
-        width : width
+        width : width,
     }, charts)
 
     return road_layout;
 }
 
-d3.csv("data.csv", function(data) {
+function setup_roadmap(data, layout_factory) {
+    d3.selectAll("svg.roadmap").remove();
     var all = new municipalities.Municipalities(data);
     var natdata = all.subset(["Summary"]).munics[0];
     var national_ratio = (natdata["Total Fines"] / natdata["Total Budget"]) * 100;
 
-    add_route(all.subset(n1_cpt_jhb), d3.select("#n1-jhbcpt"), national_ratio);
-    add_route(all.subset(n2_cpt_plet), d3.select("#n2-cptplet"), national_ratio);
-    add_route(all.subset(n3_jhb_eth), d3.select("#n3-jhbeth"), national_ratio);
+    add_route(layout_factory, 800, height, all.subset(n1_cpt_jhb), d3.select("#n1-jhbcpt"), national_ratio);
+    add_route(layout_factory, 1000, height, all.subset(n2_cpt_plet), d3.select("#n2-cptplet"), national_ratio);
+    add_route(layout_factory, 600, height, all.subset(n3_jhb_eth), d3.select("#n3-jhbeth"), national_ratio);
+}
+
+function updateWindow(){
+    var factories = roadmap.layouts.factories;
+    var w = window;
+    var x = w.innerWidth || e.clientWidth || g.clientWidth;
+    var y = w.innerHeight|| e.clientHeight|| g.clientHeight;
+
+    if (Math.abs(window.orientation) == 90) {
+        roadmap.orientation = "H";
+        setup_roadmap(roadmap.data, factories.HorizontalLayoutFactory);
+    } else if (window.orientation == 0 || window.orientation == 180) {
+        roadmap.orientation = "V";
+        setup_roadmap(roadmap.data, factories.VerticalLayoutFactory);
+    } else {
+        roadmap.orientation = "H";
+        setup_roadmap(roadmap.data, factories.HorizontalLayoutFactory);
+    }
+    window.orientationchange = updateWindow;
+}
+
+d3.csv("data.csv", function(data) {
+    roadmap.data = data;
+    updateWindow();
+
+    window.addEventListener('orientationchange', updateWindow, false);
+    window.addEventListener('onresize', updateWindow, false);
+
 });

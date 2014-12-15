@@ -10,6 +10,7 @@ roadmap.layouts.roadmap = (function() {
         this.x = ctx.startx || 0;
         this.y = ctx.starty || 0;
         this.margin = ctx.margin || 15;
+        this.height = ctx.height || 200;
     }
 
     self.HorizontalLayout.prototype = {
@@ -37,21 +38,32 @@ roadmap.layouts.roadmap = (function() {
             var margin = this.margin;
             var end = extent.bubbles[extent.bubbles.length - 1];
             var start = extent.bubbles[0];
-            if (idx == 0) margin = this.margin * 2 + this.margin/2;
-            //if (idx == extents.length - 1) margin = this.margin * 2.5;
-            return end.xpos - start.xpos + end.radius * 2 + margin;
+            if (idx == 0)
+                margin = this.margin * 2 + this.margin/2;
+            var width = end.xpos - start.xpos + end.radius * 2 + margin;
+            return width;
         },
         extentY : function(extent, idx) {
             return 0;
         },
         extentHeight : function(extent, idx) {
-            return "100%"
+            return this.height;
+        },
+        extentLabelTransform : function(extent, idx) {
+            var left = this.extentX(extent, idx);
+            var width = this.extentWidth(extent, idx);
+            var height = this.extentHeight(extent, idx)
+            var x = left + width / 2;
+            var y = height - this.margin;
+
+            return "translate(" + x + ", " + y + ")"
         }
     }
 
     self.VerticalLayout = function(ctx) {
         this.x = ctx.startx || 0;
         this.y = ctx.starty || 0;
+        this.width = ctx.width || 200;
         this.margin = ctx.margin || 15;
     }
 
@@ -74,15 +86,27 @@ roadmap.layouts.roadmap = (function() {
             return 0;
         },
         extentWidth : function(extent, idx) {
-            return 200;
+            return this.width;
         },
         extentY : function(extent, idx) {
             var start = extent.bubbles[0];
             return start.ypos - start.radius;
         },
         extentHeight : function(extent, idx) {
+            var start = extent.bubbles[0];
             var end = extent.bubbles[extent.bubbles.length - 1];
-            return end.ypos - end.radius * 2;
+            return end.ypos - this.extentY(extent, idx) + end.radius + this.margin
+        },
+        extentLabelTransform : function(extent, idx) {
+            var left = this.extentX(extent, idx);
+            var width = this.extentWidth(extent, idx);
+            var top = this.extentY(extent, idx)
+            var height = this.extentHeight(extent, idx)
+            
+            var x = left + this.margin;
+            var y = top + height / 2
+
+            return "translate(" + x + ", " + y + ") rotate(-90)"
         }
     }
     return self;
@@ -151,6 +175,7 @@ roadmap.layouts.factories = (function() {
                     layout : new roadmap.layouts.bubble.HorizontalLayout(10)
                 })
                 .style()
+                // TODO need to figure out where this could be added
                 .addClickObserver(click_pie);
             }
         }

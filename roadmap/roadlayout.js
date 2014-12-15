@@ -18,6 +18,7 @@ roadmap.roadlayout = (function() {
             this.margin = ctx.margin || 15;
             this.height = ctx.height || 200;
             this.width = ctx.width || 400;
+            this.corner_radius = ctx.corner_radius || 10;
             this.bubbles = [];
 
             if (ctx.bubble_factory === undefined) {
@@ -38,14 +39,16 @@ roadmap.roadlayout = (function() {
             this.layout = new this.roadmap_layout_factory({
                 startx : this.offset,
                 starty : this.ypos,
-                margin : this.margin
+                margin : this.margin,
+                height : this.height,
+                width : this.width
             })
         },
         update : function() {
             this.reset();
             var final = this
                 .addBubbles()
-                //.addEndpointLabels()
+                .addEndpointLabels()
                 .drawLine()
                 .drawProvinceBoxes()
                 //.addLegend()
@@ -94,18 +97,15 @@ roadmap.roadlayout = (function() {
             var current_province = { province : "", bubbles: [], provinces : [] };
             for (idx in this.bubbles) {
                 bubble = this.bubbles[idx];
-                data = bubble.data;
-                province = data["Province"]
+                var data = bubble.data;
+                var province = data["Province"]
                 if (extents.length == 0 || current_province.province != province) {
                     extents.push(current_province);
                     current_province = {
                         province : province,
                         bubbles : [bubble]
-                        //start : bubble.xpos,
-                        //end : bubble.xpos + bubble.radius * 2
                     };
                 } else {
-                    //current_province.end = bubble.xpos + bubble.radius * 2;
                     current_province.bubbles.push(bubble)
                 }
             }
@@ -119,7 +119,7 @@ roadmap.roadlayout = (function() {
 
             me
                 ._add_windows(extents)
-                //._add_labels(extents)
+                ._add_labels(extents)
 
             return this;
         },
@@ -136,11 +136,8 @@ roadmap.roadlayout = (function() {
                 .text(function(el) { return code_to_province[el.province] })
                 .style("text-anchor", "middle")
                 .attr("transform", function(el, idx) {
-                    var middle = (el.end + el.start) / 2;
-                    if (idx == extents.length - 1)     
-                        middle = (el.end + el.start + me.margin * 1.5) / 2
-                        
-                    return "translate(" + middle + ", " + (me.height - me.margin) + ")"
+                    
+                    return me.layout.extentLabelTransform(el, idx);
                 })
             return this;
         },
@@ -151,8 +148,8 @@ roadmap.roadlayout = (function() {
                 .attr("width", function(extent, idx) { return me.layout.extentWidth(extent, idx)})
                 .attr("y", function(extent, idx) { return me.layout.extentY(extent, idx)})
                 .attr("height", function(extent, idx) { return me.layout.extentHeight(extent, idx)})
-                .attr("rx", 10)
-                .attr("ry", 10)
+                .attr("rx", me.corner_radius)
+                .attr("ry", me.corner_radius)
                 .style("fill", "none")
                 .style("stroke", "000000")
                 .attr("data-province", function(el) {

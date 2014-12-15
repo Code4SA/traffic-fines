@@ -21,6 +21,7 @@ roadmap.bubbles = (function() {
         this.relative = ctx.relative || 1;
         this.margin = ctx.margin || 10;
         this.layout = ctx.layout || new self.HorizontalLayout(this.margin);
+        this.ratio_threshold = ctx.ratio_threshold || 3;
 
         this.click_observers = [];
         this.radius = 0;
@@ -47,7 +48,7 @@ roadmap.bubbles = (function() {
                 me.onClick(el, idx);
             })
 
-        if (this.radius > 15) {
+        if (ratio > this.ratio_threshold) {
             this.setLabel(this.data["Name"])
             this.setCenterLabel(Math.round(ratio) + "x");
         }
