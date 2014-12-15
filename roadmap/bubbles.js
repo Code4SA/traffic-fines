@@ -5,6 +5,16 @@ roadmap.bubbles = (function() {
     var self = {}
     var max_radius = 30, min_radius = 2;
 
+    self.perc_budget_calculator = function(datum) {
+        return datum["Total Fines"] / datum["Total Budget"];
+    }
+
+    self.per_capita_calculator = function(datum) {
+        if (datum["Total Fines"] <= 0) return 1;
+        var monthly = datum["Total Fines"] / datum["Population"] / 12;
+        return monthly
+    }
+
     self.MunicBubble = function(ctx) {
         if (ctx.element === undefined) {
             throw Error("Expected root element")
@@ -16,25 +26,26 @@ roadmap.bubbles = (function() {
         }
         this.data = ctx.data;
 
-        this.r_min = ctx.r_min || min_radius;
-        this.r_max = ctx.r_max || max_radius;
+        this.r_min = ctx.min_radius || min_radius;
+        this.r_max = ctx.max_radius || max_radius;
         this.relative = ctx.relative || 1;
         this.margin = ctx.margin || 10;
         this.layout = ctx.layout || new self.HorizontalLayout(this.margin);
         this.ratio_threshold = ctx.ratio_threshold || 3;
+        this.calculator = ctx.calculator || self.perc_budget_calculator;
 
         this.click_observers = [];
         this.radius = 0;
 
         var me = this;
-        var ratio = (this.data["Total Fines"] / this.data["Total Budget"]) * 100 / this.relative;
+        var ratio = this.calculator(this.data) / this.relative;
 
         var calc_radius = function(ratio) {
             var radius = Math.sqrt(ratio) * 8;
-            if (radius > this.r_max)
-                return this.r_max
-            else if (radius < this.r_min)
-                return this.r_min
+            if (radius > me.r_max)
+                return me.r_max
+            else if (radius < me.r_min)
+                return me.r_min
             return radius
         }
 
@@ -72,6 +83,8 @@ roadmap.bubbles = (function() {
                 .attr("transform", function(el, i) {
                     return "translate(" + coords.x + ", " + coords.y + ")"
                 })
+                .classed("munic-label", true)
+
         },
         setCenterLabel : function(text) {
             var me = this;

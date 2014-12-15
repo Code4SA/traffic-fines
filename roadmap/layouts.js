@@ -8,7 +8,7 @@ roadmap.layouts.roadmap = (function() {
     var self = {};
     self.HorizontalLayout = function(ctx) {
         this.x = ctx.startx || 0;
-        this.y = ctx.starty || 0;
+        this.y = ctx.starty || 100;
         this.margin = ctx.margin || 15;
         this.height = ctx.height || 200;
     }
@@ -18,7 +18,7 @@ roadmap.layouts.roadmap = (function() {
             var me = this;
             bubble.element
                 .attr("transform", function() {
-                    bubble.xpos = me.x;
+                    bubble.xpos = me.x + me.margin;
                     bubble.ypos = me.y;
                     me.x += bubble.radius * 2 + me.margin;
                     str = "translate(" + bubble.xpos + ", " + bubble.ypos + ")"
@@ -29,8 +29,9 @@ roadmap.layouts.roadmap = (function() {
             return [{x:start.xpos, y:start.ypos}, {x:end.xpos + end.radius, y:end.ypos}]
         },
         extentX : function(extent, idx) {
+            
             var margin = this.margin / 2; 
-            if (idx == 0) margin = this.margin * 2;
+            if (idx == 0) margin = this.margin * 3;
             a = extent.bubbles[0].xpos - margin;
             return a;
         },
@@ -38,9 +39,15 @@ roadmap.layouts.roadmap = (function() {
             var margin = this.margin;
             var end = extent.bubbles[extent.bubbles.length - 1];
             var start = extent.bubbles[0];
-            if (idx == 0)
-                margin = this.margin * 2 + this.margin/2;
-            var width = end.xpos - start.xpos + end.radius * 2 + margin;
+
+            if (idx == 0) {
+                margin = this.margin * 3 + this.margin/2;
+            }
+
+            if (idx == (extent.length - 1)) {
+                margin = this.margin * 4;
+            }
+            var width = end.xpos - start.xpos + end.radius * 2 + margin  ;
             return width;
         },
         extentY : function(extent, idx) {
@@ -61,10 +68,10 @@ roadmap.layouts.roadmap = (function() {
     }
 
     self.VerticalLayout = function(ctx) {
-        this.x = ctx.startx || 0;
         this.y = ctx.starty || 0;
-        this.width = ctx.width || 200;
+        this.width = ctx.width || 250;
         this.margin = ctx.margin || 15;
+        this.x = ctx.startx || this.width/2;
     }
 
     self.VerticalLayout.prototype = {
@@ -73,7 +80,7 @@ roadmap.layouts.roadmap = (function() {
             bubble.element
                 .attr("transform", function() {
                     bubble.xpos = me.x - bubble.radius;
-                    bubble.ypos = me.y + bubble.radius;
+                    bubble.ypos = me.y + bubble.radius + me.margin;
                     me.y += bubble.radius * 2 + me.margin;
                     str = "translate(" + bubble.xpos + ", " + bubble.ypos + ")"
                     return str
@@ -90,6 +97,8 @@ roadmap.layouts.roadmap = (function() {
         },
         extentY : function(extent, idx) {
             var start = extent.bubbles[0];
+            if (idx == 0)
+                return start.ypos - start.radius - this.margin;
             return start.ypos - start.radius;
         },
         extentHeight : function(extent, idx) {
@@ -144,39 +153,24 @@ roadmap.layouts.factories = (function() {
     self = {}
     self.VerticalLayoutFactory = {
         map :  roadmap.layouts.roadmap.VerticalLayout,
-        bubblefactory : function(relative, min_radius, max_radius) {
+        bubblefactory : function(ctx) {
             return function(root, datum) {
-                return new bubbles.MunicBubble(
-                {
-                    element : root,
-                    data : datum,
-                    relative : relative,
-                    min_radius : min_radius,
-                    max_radius : max_radius,
-                    layout : new roadmap.layouts.bubble.VerticalLayout(10)
-                })
-                .style()
-                .addClickObserver(click_pie);
+                ctx["element"] = root;
+                ctx["data"] = datum;
+                ctx["layout"] = new roadmap.layouts.bubble.VerticalLayout(10); 
+                return new bubbles.MunicBubble(ctx).style()
             }
         }
     }
 
     self.HorizontalLayoutFactory = {
         map : roadmap.layouts.roadmap.HorizontalLayout,
-        bubblefactory : function(relative, min_radius, max_radius) {
+        bubblefactory : function(ctx) {
             return function(root, datum) {
-                return new bubbles.MunicBubble(
-                {
-                    element : root,
-                    data : datum,
-                    relative : relative,
-                    min_radius : min_radius,
-                    max_radius : max_radius,
-                    layout : new roadmap.layouts.bubble.HorizontalLayout(10)
-                })
-                .style()
-                // TODO need to figure out where this could be added
-                .addClickObserver(click_pie);
+                ctx["element"] = root;
+                ctx["data"] = datum;
+                ctx["layout"] = new roadmap.layouts.bubble.HorizontalLayout(10); 
+                return new bubbles.MunicBubble(ctx).style()
             }
         }
     }

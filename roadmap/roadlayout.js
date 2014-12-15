@@ -13,11 +13,11 @@ roadmap.roadlayout = (function() {
     self.RoadLayout.prototype = {
         style : function() {},
         initialize : function(ctx) {
-            this.offset = ctx.offset || 100;
-            this.ypos = ctx.ypos || 100;
+            this.offset = ctx.offset || 0;
+            this.ypos = ctx.ypos || 0;
             this.margin = ctx.margin || 15;
             this.height = ctx.height || 200;
-            this.width = ctx.width || 400;
+            this.width = ctx.width || 250;
             this.corner_radius = ctx.corner_radius || 10;
             this.bubbles = [];
 
