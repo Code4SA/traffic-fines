@@ -26,3 +26,11 @@
     margin: 3px;
 }
 
+.buttons {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.buttons button {
+    border-radius: 5px;
+}

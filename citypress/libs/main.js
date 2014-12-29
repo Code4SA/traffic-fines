@@ -36,33 +36,49 @@ var calc_radius = function(value) {
     return radius
 }
 
-var transition_radius = function(element, value) {
-    var radius = calc_radius(value);
-    var code = d3.select(element).attr("data-munic");
-
-    d3.select(element).select("circle").transition().attr("r", radius);
-    d3.select(element).selectAll("text").text(function(el, idx) {
-        if (idx == 0) return d3.select(this).text();
-        return Math.round(value) + "x";
-    });
-}
 
 var load_data = function(container, svgfile) {
-    var button_pc = container.append("button")
-        .text("Per Capita")
+    var transition_radius = function(element, value) {
+        var radius = calc_radius(value);
+        var code = d3.select(element).attr("data-munic");
+
+        d3.select(element).select("circle").transition().attr("r", radius);
+        d3.select(element).selectAll("text").text(function(el, idx) {
+            if (idx == 0) return d3.select(this).text();
+            return Math.round(value) + "x";
+        });
+        container.selectAll(".buttons button")
+            .classed("btn-primary", false)
+            .classed("btn-default", true);
+    }
+
+    var make_button = function(text) {
+        var button = button_container.append("button")
+            .classed("btn btn-sm", true)
+            .text(text)
+            .attr("type", "button")
+        return button;
+    }
+
+    var button_container = container.append("div").classed("buttons", true);
+
+    make_button("Per Capita")
         .on("click", function(el) {
             container.selectAll("g.bubble").each(function(el) {
                 transition_radius(this, el["nat_per_capita"]);
             });
+            d3.select(this).classed("btn-primary", true);
         })
+        .classed("btn-primary", true)
 
-    var button_perc = container.append("button")
-        .text("Percentage Budget")
+    make_button("Percentage Budget")
         .on("click", function(el) {
             container.selectAll("g.bubble").each(function(el) {
                 transition_radius(this, el["nat_perc_budget"]);
             });
+            d3.select(this).classed("btn-primary", true);
         })
+        .classed("btn-default", true)
 
     var svg = container.append("svg")
         .attr("width", w)
