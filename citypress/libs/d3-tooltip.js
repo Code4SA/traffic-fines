@@ -11,7 +11,7 @@ function D3Tooltip (d3) {
                 .attr('id', this.id)
                 .style('opacity', 0)
                 .style('position', 'absolute')
-                .style('pointer-events', 'none')
+                //.style('pointer-events', 'none')
 
   this.visible = false;
   ttCounter += 1
