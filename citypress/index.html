@@ -20,73 +20,21 @@
     <script type="text/html" id="tt_template">
     <h3><%=Name%></h3>
     <dl class="dl-horizontal">
-        <dt>Population:</dt><dd><%=population%></dd>
-        <dt>Fine Revenue (2014):</dt><dd><%=total_fines%></dd>
-        <dt>Overall Revenue:</dt><dd><%=total_budget%></dd>
-        <dt>Fines as % of revenue:</dt><dd><%=perc_fines%>%</dd>
-        <dt>Fine Revenue <br/>per capita (monthly):</dt><dd><%=fines_per_capita%></dd>
+        <dt>Population:</dt><dd><%=fpopulation%></dd>
+        <dt>Fine Revenue (2014):</dt><dd><%=ftotal_fines%></dd>
+        <dt>Overall Revenue:</dt><dd><%=ftotal_budget%></dd>
+        <dt>Fines as % of revenue:</dt><dd><%=fperc_fines%>%</dd>
+        <dt>Fine Revenue <br/>per capita (monthly):</dt><dd><%=ffines_per_capita%></dd>
     </dl>
     <h4>Compared to National Average</h4>
     <dl class="dl-horizontal">
-        <dt>Per capita:</dt><dd><%=nat_per_capita%> times</dd>
-        <dt>% of revenue:</dt><dd><%=nat_perc_budget%> times</dd>
+        <dt>Per capita:</dt><dd><%=fnat_per_capita%> times</dd>
+        <dt>% of revenue:</dt><dd><%=fnat_perc_budget%> times</dd>
     </dl>
     </script>
+
     <script>
-        var w = "100%", h = "100%";
-        var nat_fines_per_capita = 1024433163 / 51770563 / 12;
-        var nat_perc_budget = 1024433163 / 244507746391 * 100;
-
-        var svg = d3.select("#n1.container")
-            .append("svg")
-            .attr("width", w)
-            .attr("height", h)[0][0];
-
-        var csv2dict = function(arr) {
-            data = {};
-            for (var idx in arr) {
-                var row = arr[idx];
-                var mcode = row["Municipality"]
-                data[mcode] = row;
-            }
-            return data;
-        }
-
-        var create_tooltip = function(data) {
-            perc_fines = data["Total Fines"] / data["Total Budget"] * 100
-            fines_per_capita = data["Total Fines"] / data["Population"] / 12;
-
-            data["population"] = parseInt(data["Population"]).toLocaleString();
-            data["total_fines"] = "R" + parseInt(data["Total Fines"]).toLocaleString();
-            data["total_budget"] = "R" + parseInt(data["Total Budget"]).toLocaleString();
-            data["perc_fines"] = Math.round(perc_fines);
-            data["fines_per_capita"] = "R" + Math.round(fines_per_capita * 100) / 100;
-            data["nat_per_capita"] = Math.round(fines_per_capita / nat_fines_per_capita * 100) / 100;
-            data["nat_perc_budget"] = Math.round(perc_fines / nat_perc_budget * 100) / 100;
-            return tmpl("tt_template", data);
-        }
-
-        queue()
-            .defer(d3.xml, "n1.svg")
-            .defer(d3.csv, "data.csv")
-            .await(function(error, xml, csv) {
-                var importedNode = document.importNode(xml.documentElement, true);
-                var img = svg.appendChild(importedNode.cloneNode(true));
-
-                var data = csv2dict(csv);
-                var tooltip = new D3Tooltip(d3);
-                d3.selectAll("#n1 g.bubble")
-                    .style("cursor", "pointer")
-                    .each(function() {
-                        var me = d3.select(this);
-                        var code = me.attr("data-munic");
-                        me[0][0].__data__ = data[code];
-                    })
-                    .on("click", function(el) {
-                        tooltip.html(create_tooltip(el));
-                        tooltip.show();
-                    })
-        })
+    load_data(d3.select("#n1.container"), "n1.svg");
     </script>
 </body>
 </html>
