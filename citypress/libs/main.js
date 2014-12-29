@@ -80,6 +80,7 @@ var load_data = function(container, svgfile) {
             var data = csv2dict(csv);
             var tooltip = new D3Tooltip(d3);
             d3.selectAll("g.windows").on("click", function() {tooltip.toggle();});
+            d3.select(".d3-tooltip").on("click", function() {tooltip.toggle();});
             d3.selectAll("g.bubble")
                 .style("cursor", "pointer")
                 .each(function() {
