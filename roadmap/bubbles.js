@@ -49,6 +49,7 @@ roadmap.bubbles = (function() {
             return radius
         }
 
+        this.element.attr("data-munic", this.data["Municipality"]);
         this.radius = calc_radius(ratio);
         var circle = this.element.append("circle")
             .attr("r", me.radius)
