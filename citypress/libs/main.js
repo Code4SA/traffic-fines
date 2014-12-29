@@ -54,7 +54,7 @@ var load_data = function(container, svgfile) {
 
     var make_button = function(text) {
         var button = button_container.append("button")
-            .classed("btn btn-sm", true)
+            .classed("btn", true)
             .text(text)
             .attr("type", "button")
         return button;
@@ -80,11 +80,7 @@ var load_data = function(container, svgfile) {
         })
         .classed("btn-default", true)
 
-    var svg = container.append("svg")
-        .attr("width", w)
-        .attr("height", h);
-
-    var svg_element = svg[0][0];
+    var svg_element = container[0][0];
 
     queue()
         .defer(d3.xml, svgfile)
