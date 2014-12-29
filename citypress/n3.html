@@ -12,8 +12,8 @@
     </head>
 
 <body>
-    <h1 class="text-center">N1: Cape Town to Johannesburg</h1>
-    <div id="n1" class="container"></div>
+    <h1 class="text-center">N3: Johannesburg to Durban</h1>
+    <div id="n3" class="container"></div>
 
     <script src="d3.v3.js" type="text/javascript" charset="utf-8"></script>
     <script src="queue.v1.min.js"></script>
@@ -40,7 +40,7 @@
         var nat_fines_per_capita = 1024433163 / 51770563 / 12;
         var nat_perc_budget = 1024433163 / 244507746391 * 100;
 
-        var svg = d3.select("#n1.container")
+        var svg = d3.select("#n3.container")
             .append("svg")
             .attr("width", w)
             .attr("height", h)[0][0];
@@ -70,7 +70,7 @@
         }
 
         queue()
-            .defer(d3.xml, "n1.svg")
+            .defer(d3.xml, "n3.svg")
             .defer(d3.csv, "data.csv")
             .await(function(error, xml, csv) {
                 var importedNode = document.importNode(xml.documentElement, true);
@@ -78,7 +78,7 @@
 
                 var data = csv2dict(csv);
                 var tooltip = new D3Tooltip(d3);
-                d3.selectAll("#n1 g.bubble")
+                d3.selectAll("#n3 g.bubble")
                     .style("cursor", "pointer")
                     .each(function() {
                         var me = d3.select(this);
