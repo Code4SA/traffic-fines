@@ -1,7 +1,7 @@
 var min_radius = 2;
 var max_radius = 60;
 var width = "100%";
-var hheight = 200, vwidth = 250;
+var hheight = 1500, vwidth = 250;
 
 d3.selection.prototype.moveToFront = function() {
   return this.each(function(el) {
@@ -91,13 +91,10 @@ function setup_roadmap(data, layout_factory) {
     var natdata = all.subset(["Summary"]).munics[0];
     var national_ratio = calculator(natdata);
 
-    add_route(layout_factory, 710, all.subset(n1_cpt_jhb), d3.select("#n1-jhbcpt"), national_ratio);
+    add_route(layout_factory, 1200, all.subset(n1_cpt_jhb), d3.select("#n1-jhbcpt"), national_ratio);
     add_route(layout_factory, 890, all.subset(n2_cpt_plet), d3.select("#n2-cptplet"), national_ratio);
     add_route(layout_factory, 520, all.subset(n3_jhb_eth), d3.select("#n3-jhbeth"), national_ratio);
-    d3.select("#n1-jhbcpt").selectAll(".bubble")
-        .on("click", function(el, idx) {
-            alert(el);
-        })
+    add_route(layout_factory, 1000, all.subset(n1_jhb_polokwane), d3.select("#n1-jhbpol"), national_ratio);
 }
 
 function updateWindow(){
