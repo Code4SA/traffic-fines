@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="base.css">
+        <style>
+            .container {
+                width: 100%;
+                height: 250px;
+            }
+        </style>
+    </head>
+
+<body>
+    <h1 class="text-center">N1: Johannesburg to Polokwane</h1>
+    <div id="n1" class="container"></div>
+
+    <script src="lib.js" type="text/javascript" charset="utf-8"></script>
+
+    <script type="text/html" id="tt_template">
+    <h3><%=Name%></h3>
+    <dl class="dl-horizontal">
+        <dt>Population:</dt><dd><%=fpopulation%></dd>
+        <dt>Fine Revenue (2014):</dt><dd><%=ftotal_fines%></dd>
+        <dt>Overall Revenue:</dt><dd><%=ftotal_budget%></dd>
+        <dt>Fines as % of revenue:</dt><dd><%=fperc_fines%>%</dd>
+        <dt>Fine Revenue <br/>per capita (monthly):</dt><dd><%=ffines_per_capita%></dd>
+    </dl>
+    <h4>Compared to National Average</h4>
+    <dl class="dl-horizontal">
+        <dt>Per capita:</dt><dd><%=fnat_per_capita%> times</dd>
+        <dt>% of revenue:</dt><dd><%=fnat_perc_budget%> times</dd>
+    </dl>
+    </script>
+    <script>
+    load_data(d3.select("#n1.container"), "n1-polokwane.svg");
+    </script>
+</body>
+</html>
+
