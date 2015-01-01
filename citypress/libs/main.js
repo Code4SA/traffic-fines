@@ -36,7 +36,7 @@ var calc_radius = function(value) {
     return radius
 }
 
-var load_data = function(container, svgfile, datafile) {
+var load_data = function(container, svgfile, datafile, onload) {
     var transition_radius = function(element, value) {
         var radius = calc_radius(value);
         var code = d3.select(element).attr("data-munic");
@@ -113,5 +113,6 @@ var load_data = function(container, svgfile, datafile) {
                     tooltip.html(create_tooltip(el));
                     tooltip.show();
                 })
+            if (onload) onload();
     })
 }

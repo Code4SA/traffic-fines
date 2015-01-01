@@ -28,9 +28,10 @@
     </script>
 
     <script>
-    load_data(d3.select("#n2.roadmap"), "assets/n2.svg", "assets/data.csv");
     var pymChild = new pym.Child();
-    setTimeout('pymChild.sendHeight();', 100);
+    load_data(d3.select("#n2.roadmap"), "assets/n1.svg", "assets/data.csv", function() {
+        pymChild.sendHeight();
+    });
     </script>
 </body>
 </html>
