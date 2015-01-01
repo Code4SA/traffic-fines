@@ -2,13 +2,14 @@
 <html>
     <head>
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="assets/base.css">
     </head>
 
 <body>
-    <div id="n1" class="roadmap col-xs-12 col-md-4 col-md-offset-4"></div>
+    <div id="n1" class="roadmap"></div>
             
-    <script src="lib.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/lib.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="assets/pym.min.js"></script>
 
     <script type="text/html" id="tt_template">
     <h3><%=Name%></h3>
@@ -27,7 +28,9 @@
     </script>
 
     <script>
-    load_data(d3.select("#n1.roadmap"), "n1.svg");
+    load_data(d3.select("#n1.roadmap"), "assets/n1.svg", "assets/data.csv");
+    var pymChild = new pym.Child();
+    setTimeout('pymChild.sendHeight();', 100);
     </script>
 </body>
 </html>

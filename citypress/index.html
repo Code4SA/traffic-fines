@@ -1,7 +1,7 @@
 <html>
 <head>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="assets/base.css">
 </head>
 <body>
     <div class="container">
@@ -45,7 +45,7 @@ Et omnis illud semper nec, te graeci melius disputationi vix, nemore animal effi
             <div class="col-md-4">Lorem ipsum dolor sit amet, ut qui debitis fabellas. Ex blandit referrentur usu, nec scaevola evertitur cu. Vim ne cotidieque contentiones, mei at cibo equidem philosophia, mel an choro nonumy nemore. Eam laudem aliquip repudiare ut, ius volumus ancillae vulputate ne. Vim ea omnes scribentur, porro epicuri accommodare an eam, id fabulas iracundia sadipscing usu.</div>
         </div>
     </div>
-    <script src="http://code4sa.org/traffic-fines/citypress/lib.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/lib.js" type="text/javascript" charset="utf-8"></script>
 
     <script type="text/html" id="tt_template">
     <h3><%=Name%></h3>
@@ -64,10 +64,11 @@ Et omnis illud semper nec, te graeci melius disputationi vix, nemore animal effi
     </script>
 
     <script>
-    load_data( d3.select("#n1.roadmap"), "n1.svg");
-    load_data( d3.select("#n2.roadmap"), "n2.svg");
-    load_data( d3.select("#n3.roadmap"), "n3.svg");
-    load_data( d3.select("#n1p.roadmap"), "n1-polokwane.svg");
+    var datapath = "assets/data.csv";
+    load_data( d3.select("#n1.roadmap"), "assets/n1.svg", datapath);
+    load_data( d3.select("#n2.roadmap"), "assets/n2.svg", datapath);
+    load_data( d3.select("#n3.roadmap"), "assets/n3.svg", datapath);
+    load_data( d3.select("#n1p.roadmap"), "assets/n1-polokwane.svg", datapath);
     </script>
 </body>
 </html>

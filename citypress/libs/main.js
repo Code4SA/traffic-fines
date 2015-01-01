@@ -36,8 +36,7 @@ var calc_radius = function(value) {
     return radius
 }
 
-
-var load_data = function(container, svgfile) {
+var load_data = function(container, svgfile, datafile) {
     var transition_radius = function(element, value) {
         var radius = calc_radius(value);
         var code = d3.select(element).attr("data-munic");
@@ -84,11 +83,10 @@ var load_data = function(container, svgfile) {
 
     queue()
         .defer(d3.xml, svgfile)
-        .defer(d3.csv, "data.csv")
+        .defer(d3.csv, datafile)
         .await(function(error, xml, csv) {
             var importedNode = document.importNode(xml.documentElement, true);
             var img = svg_element.appendChild(importedNode.cloneNode(true));
-
             var data = csv2dict(csv);
             var tooltip = new D3Tooltip(d3);
             d3.selectAll("g.windows").on("click", function() {tooltip.toggle();});
