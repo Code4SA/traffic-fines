@@ -251,6 +251,7 @@
             var height = parseInt(message);
             
             this.iframe.setAttribute('height', height + 'px');
+            this.iframe.style['height'] = height + 'px';
         };
 
 
