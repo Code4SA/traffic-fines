@@ -11,7 +11,7 @@ function D3Tooltip (d3) {
                 .attr('id', this.id)
                 .style('opacity', 0)
                 .style('position', 'absolute')
-                //.style('pointer-events', 'none')
+                .style('pointer-events', 'none')
 
   this.visible = false;
   ttCounter += 1
@@ -23,10 +23,13 @@ D3Tooltip.prototype.html = function(html) {
 
 D3Tooltip.prototype.show = function() {
   this.$el.transition().duration(200).style('opacity', .9)
-  this.$el.style('left', this.d3.event.pageX + 'px')
-          .style('top', (this.d3.event.pageY - 28) + 'px')
-
+  //this.$el.style('left', this.d3.event.pageX + 'px')
+  //        .style('top', (this.d3.event.pageY - 28) + 'px')
+    
   this.visible = true;
+  this.$el.style('left',  (this.d3.event.pageX - 100) + 'px')
+          .style('top', (this.d3.event.pageY + 0) + 'px')
+
 }
 
 D3Tooltip.prototype.hide = function() {
