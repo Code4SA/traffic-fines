@@ -8,13 +8,14 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   viewBox="0 0 100 215.9439"
+   viewBox="0 0 100.00021 238.29025"
    width="100%"
    class="roadmap"
    id="svg11848"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="n3.svg">
+   sodipodi:docname="n3.svg"
+   height="100%">
   <metadata
      id="metadata11960">
     <rdf:RDF>
@@ -45,16 +46,16 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="2.5173334"
-     inkscape:cx="161.19301"
-     inkscape:cy="87.296183"
+     inkscape:zoom="7.1200941"
+     inkscape:cx="53.213401"
+     inkscape:cy="215.45904"
      inkscape:window-x="65"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg11848" />
   <g
      id="g4302"
-     transform="scale(0.39840637,0.39840637)">
+     transform="matrix(0.39840637,0,0,0.39840637,1.0443927e-4,32.52721)">
     <path
        inkscape:connector-curvature="0"
        id="path11850"
@@ -67,7 +68,7 @@
        class="windows">
       <rect
          id="rect11854"
-         style="opacity:0.4;fill:#642376;stroke:#000000"
+         style="opacity:0.4;fill:#642376;stroke:#000000;stroke-width:0.45682001;stroke-miterlimit:4;stroke-dasharray:none"
          data-province="GT"
          ry="10"
          rx="10"
@@ -86,7 +87,7 @@
        class="windows">
       <rect
          id="rect11860"
-         style="opacity:0.4;fill:#b168af;stroke:#000000"
+         style="opacity:0.4;fill:#b168af;stroke:#000000;stroke-width:0.45682001;stroke-miterlimit:4;stroke-dasharray:none"
          data-province="MP"
          ry="10"
          rx="10"
@@ -106,7 +107,7 @@
        class="windows">
       <rect
          id="rect11866"
-         style="opacity:0.4;fill:#125743;stroke:#000000;stroke-width:1.07071495"
+         style="opacity:0.4;fill:#125743;stroke:#000000;stroke-width:0.45682001;stroke-miterlimit:4;stroke-dasharray:none"
          data-province="FS"
          ry="11.467549"
          rx="9.9971714"
@@ -127,7 +128,7 @@
        class="windows">
       <rect
          id="rect11872"
-         style="opacity:0.4;fill:#bac423;stroke:#000000;stroke-width:0.97941136"
+         style="opacity:0.4;fill:#bac423;stroke:#000000;stroke-width:0.45682001;stroke-miterlimit:4;stroke-dasharray:none"
          data-province="KZN"
          ry="9.5916758"
          rx="10.000823"
@@ -157,11 +158,6 @@
          style="fill:#ff2b2b;stroke:#343434;stroke-width:1px"
          transform="translate(11.48847,0)"
          r="11.48847" />
-      <text
-         y="3.3105469"
-         x="32.97694"
-         id="text11880"
-         class="munic-label">Johannesburg</text>
     </g>
     <g
        id="g11882"
@@ -216,11 +212,6 @@
          style="fill:#ff2b2b;stroke:#343434;stroke-width:1px"
          transform="translate(21.295727,0)"
          r="21.295727" />
-      <text
-         y="4.4736328"
-         x="52.591454"
-         id="text11894"
-         class="munic-label">Midvaal</text>
       <text
          y="4.3740234"
          x="21.295727"
@@ -408,11 +399,6 @@
          transform="translate(17.350545,0)"
          r="17.350546" />
       <text
-         y="3.3105469"
-         x="44.701092"
-         id="text11938"
-         class="munic-label">uMngeni</text>
-      <text
          y="4.2890625"
          x="17.350546"
          id="text11940"
@@ -472,17 +458,31 @@
          style="fill:#ff2b2b;stroke:#343434;stroke-width:1px"
          transform="translate(8.0628287,0)"
          r="8.062829" />
-      <text
-         y="4.4736328"
-         x="26.125656"
-         id="text11954"
-         class="munic-label">eThekwini</text>
     </g>
     <g
        data-munic="Summary"
        class="bubble"
        id="g9005-3"
-       transform="translate(6.8828124,533.45641)">
+       transform="translate(6.8828124,533.45641)" />
+  </g>
+  <g
+     id="g5272-6"
+     transform="matrix(0.39009971,0,0,0.39009971,3.9011011,8.3187563)">
+    <rect
+       id="rect10514-5"
+       style="opacity:0.4;fill:#ffb380;stroke:#000000;stroke-width:0.4665474;stroke-miterlimit:4;stroke-dasharray:none"
+       data-province="WC"
+       ry="9.9992609"
+       rx="10.847737"
+       height="61.775391"
+       y="0.233"
+       width="255.87872"
+       x="-9.7670002" />
+    <g
+       data-munic="Summary"
+       class="bubble"
+       id="g9005-3-3"
+       transform="translate(103.57115,31.671053)">
       <circle
          sodipodi:ry="8.0627928"
          sodipodi:rx="8.0627928"
@@ -491,22 +491,156 @@
          cy="0"
          cx="0"
          d="M 8.0627928,0 C 8.0627928,4.4529575 4.4529575,8.0627928 0,8.0627928 -4.4529575,8.0627928 -8.0627928,4.4529575 -8.0627928,0 c 0,-4.4529575 3.6098353,-8.0627928 8.0627928,-8.0627928 4.4529575,0 8.0627928,3.6098353 8.0627928,8.0627928 z"
-         id="circle9007-3"
-         style="fill:#ff2b2b;stroke:#343434;stroke-width:1px"
-         transform="translate(8.0627929,0)"
+         id="circle9007-3-0"
+         style="fill:#ff2b2b;stroke:#343434;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
+         transform="translate(14.601222,17.163086)"
          r="8.0627928" />
-      <text
-         y="4.4736328"
-         x="26.125586"
-         id="text9009-2"
-         class="munic-label">National Average</text>
     </g>
     <image
-       width="35.078033"
-       height="35.078033"
+       width="20.471485"
+       height="20.471485"
        xlink:href="data:image/png;base64,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 "
-       id="image4503-9-01"
-       x="18.01832"
-       y="3.6158257" />
+       id="image4503-9-01-0"
+       x="211.92181"
+       y="0.34100932" />
+    <g
+       transform="translate(37.232922,51.53653)"
+       id="g3824-2">
+      <text
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;text-anchor:end;fill:#1a1a1a;font-family:Arial;-inkscape-font-specification:Arial"
+         class="munic-label"
+         id="text9009-2-6-6"
+         x="188.96263"
+         y="2.5217664">R1.65</text>
+    </g>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4861-1"
+       y="51.108311"
+       x="170.85222"
+       style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:5.11000013px;word-spacing:0px;text-anchor:end;fill:#1a1a1a;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       xml:space="preserve"><tspan
+         id="tspan4863-2"
+         y="51.108311"
+         x="89.728912"
+         sodipodi:role="line"><tspan
+           id="tspan4865-5"
+           style="font-size:9px;text-align:end;letter-spacing:0.98000002px;text-anchor:end;fill:#1a1a1a;font-family:Arial;-inkscape-font-specification:Arial"
+           y="51.108311"
+           x="88.748909">National Average</tspan></tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4849-4"
+       y="18.497944"
+       x="47.652588"
+       style="font-size:11px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:5.11000013px;word-spacing:0px;text-anchor:start;fill:#1a1a1a;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       xml:space="preserve"><tspan
+         style="text-align:start;text-anchor:start;font-family:Arial;-inkscape-font-specification:Arial"
+         id="tspan4851-9"
+         y="18.497944"
+         x="60.349854"
+         sodipodi:role="line"><tspan
+           dx="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
+           id="tspan4853-4"
+           style="font-variant:normal;font-stretch:normal;text-align:start;letter-spacing:0.00000007px;text-anchor:start;font-family:Arial;-inkscape-font-specification:Arial"
+           y="18.497944"
+           x="60.349854">Monthly fines per capita</tspan></tspan><tspan
+         style="text-align:start;text-anchor:start;font-family:Arial;-inkscape-font-specification:Arial"
+         id="tspan4857-3"
+         y="32.247944"
+         x="34.94458"
+         sodipodi:role="line"><tspan
+           id="tspan4859-5"
+           style="font-variant:normal;font-stretch:normal;text-align:start;letter-spacing:0.00000007px;text-anchor:start;font-family:Arial;-inkscape-font-specification:Arial"
+           y="32.247944"
+           x="34.94458"> compared to the national average</tspan></tspan></text>
   </g>
+  <g
+     id="g4656-99"
+     transform="matrix(0.39009971,0,0,0.39009971,14.621253,4.7422417)">
+    <text
+       style="font-size:9px;fill:#1a1a1a;fill-opacity:1"
+       y="93.510292"
+       x="199.16765"
+       id="text10550-5"
+       class="munic-label">
+      <tspan
+         id="tspan3685-8"
+         style="font-size:9px;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1">Johannesburg</tspan>
+    </text>
+    <text
+       y="110.77706"
+       x="198.90202"
+       id="text10560-8-1-27"
+       style="font-size:9px;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1">R3.40</text>
+  </g>
+  <g
+     id="g4656-99-3"
+     transform="matrix(0.39009971,0,0,0.39009971,14.629824,48.462397)">
+    <text
+       style="font-size:9px;fill:#1a1a1a;fill-opacity:1"
+       y="93.510292"
+       x="199.16765"
+       id="text10550-5-2"
+       class="munic-label">
+      <tspan
+         id="tspan3685-8-2"
+         style="font-size:9px;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1">Midvaal</tspan>
+    </text>
+    <text
+       y="110.77706"
+       x="198.90202"
+       id="text10560-8-1-27-2"
+       style="font-size:9px;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1">R11.68</text>
+  </g>
+  <g
+     id="g4656-99-39"
+     transform="matrix(0.39009971,0,0,0.39009971,14.624681,153.74745)">
+    <text
+       style="font-size:9px;fill:#1a1a1a;fill-opacity:1"
+       y="93.510292"
+       x="199.16765"
+       id="text10550-5-7"
+       class="munic-label">
+      <tspan
+         id="tspan3685-8-0"
+         style="font-size:9px;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1">uMngenu</tspan>
+    </text>
+    <text
+       y="110.77706"
+       x="198.90202"
+       id="text10560-8-1-27-7"
+       style="font-size:9px;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1">R7.76</text>
+  </g>
+  <g
+     id="g4656-99-9"
+     transform="matrix(0.39009971,0,0,0.39009971,14.629824,190.46943)">
+    <text
+       style="font-size:9px;fill:#1a1a1a;fill-opacity:1"
+       y="93.510292"
+       x="199.16765"
+       id="text10550-5-6"
+       class="munic-label">
+      <tspan
+         id="tspan3685-8-02"
+         style="font-size:9px;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1">eThekwini</tspan>
+    </text>
+    <text
+       y="110.77706"
+       x="198.90202"
+       id="text10560-8-1-27-1"
+       style="font-size:9px;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1">R1.67</text>
+  </g>
+  <text
+     xml:space="preserve"
+     style="font-size:6px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:5.11000013px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+     x="13.170771"
+     y="4.7338428"
+     id="text7017"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan7019"
+       x="13.170771"
+       y="4.7338428"
+       style="letter-spacing:-0.02px;fill:#333333;fill-opacity:1">N3: Johannesburg - Durban</tspan></text>
 </svg>

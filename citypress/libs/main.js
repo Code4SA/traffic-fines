@@ -51,33 +51,36 @@ var load_data = function(container, svgfile, datafile, onload) {
             .classed("btn-default", true);
     }
 
-    var make_button = function(text) {
-        var button = button_container.append("button")
-            .classed("btn", true)
-            .text(text)
-            .attr("type", "button")
-        return button;
+    var enable_buttons = false;
+    if (enable_buttons) {
+        var make_button = function(text) {
+            var button = button_container.append("button")
+                .classed("btn", true)
+                .text(text)
+                .attr("type", "button")
+            return button;
+        }
+
+        var button_container = container.append("div").classed("buttons", true);
+
+        make_button("Per Capita")
+            .on("click", function(el) {
+                container.selectAll("g.bubble").each(function(el) {
+                    transition_radius(this, el["nat_per_capita"]);
+                });
+                d3.select(this).classed("btn-primary", true);
+            })
+            .classed("btn-primary", true)
+
+        make_button("Percentage Budget")
+            .on("click", function(el) {
+                container.selectAll("g.bubble").each(function(el) {
+                    transition_radius(this, el["nat_perc_budget"]);
+                });
+                d3.select(this).classed("btn-primary", true);
+            })
+            .classed("btn-default", true)
     }
-
-    var button_container = container.append("div").classed("buttons", true);
-
-    make_button("Per Capita")
-        .on("click", function(el) {
-            container.selectAll("g.bubble").each(function(el) {
-                transition_radius(this, el["nat_per_capita"]);
-            });
-            d3.select(this).classed("btn-primary", true);
-        })
-        .classed("btn-primary", true)
-
-    make_button("Percentage Budget")
-        .on("click", function(el) {
-            container.selectAll("g.bubble").each(function(el) {
-                transition_radius(this, el["nat_perc_budget"]);
-            });
-            d3.select(this).classed("btn-primary", true);
-        })
-        .classed("btn-default", true)
 
     var svg_element = container[0][0];
 
@@ -112,6 +115,7 @@ var load_data = function(container, svgfile, datafile, onload) {
                 .on("click", function(el) {
                     tooltip.html(create_tooltip(el));
                     tooltip.show();
+                    if (onload) onload();
                 })
             if (onload) onload();
     })

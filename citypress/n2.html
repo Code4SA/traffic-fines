@@ -13,23 +13,44 @@
 
     <script type="text/html" id="tt_template">
     <h3><%=Name%></h3>
-    <dl class="dl-horizontal">
-        <dt>Population:</dt><dd><%=fpopulation%></dd>
-        <dt>Fine Revenue (2014):</dt><dd><%=ftotal_fines%></dd>
-        <dt>Overall Revenue:</dt><dd><%=ftotal_budget%></dd>
-        <dt>Fines as % of revenue:</dt><dd><%=fperc_fines%>%</dd>
-        <dt>Fine Revenue <br/>per capita (monthly):</dt><dd><%=ffines_per_capita%></dd>
-    </dl>
-    <h4>Compared to National Average</h4>
-    <dl class="dl-horizontal">
-        <dt>Per capita:</dt><dd><%=fnat_per_capita%> times</dd>
-        <dt>% of revenue:</dt><dd><%=fnat_perc_budget%> times</dd>
-    </dl>
+    <table>
+        <tr>
+            <td>Population</td>
+            <td><%=fpopulation%></td>
+        </tr>
+        <tr>
+            <td>Fine Revenue (2014):</td>
+            <td><%=ftotal_fines%></td>
+        </tr>
+        <tr>
+            <td>Overall Revenue:</td>
+            <td><%=ftotal_budget%></td>
+        </tr>
+        <tr>
+            <td>Fines as % of revenue:</td>
+            <td><%=fperc_fines%>%</td>
+        </tr>
+        <tr>
+            <td>Fine Revenue:</td>
+            <td><%=ffines_per_capita%></td>
+        </tr>
+        <tr>
+            <td colspan="2"><h4>Compared to National Average</h4></td>
+        </tr>
+        <tr>
+            <td>Per capita:</td>
+            <td><%=fnat_per_capita%></td>
+        </tr>
+        <tr>
+            <td>% of revenue::</td>
+            <td><%=fnat_perc_budget%></td>
+        </tr>
+    </table>
     </script>
 
     <script>
     var pymChild = new pym.Child();
-    load_data(d3.select("#n2.roadmap"), "assets/n1.svg", "assets/data.csv", function() {
+    load_data(d3.select("#n2.roadmap"), "assets/n2.svg", "assets/data.csv", function() {
         pymChild.sendHeight();
     });
     </script>

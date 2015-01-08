@@ -432,10 +432,20 @@
             */
 
             // Get the child's height.
-            var height = document.getElementsByTagName('body')[0].offsetHeight.toString();
+            body = document.getElementsByTagName('body')[0];
+            body.style["visibility"] = 'hidden'; 
+            //var height2 = document.getElementsByTagName('body')[0].offsetHeight.toString();
+            //var height = document.getElementsByTagName('body')[0].offsetHeight.toString();
+            var height = document.getElementsByTagName('body')[0].scrollHeight.toString();
+            /*
+            var html = document.getElementsByTagName('html');
+            var body = document.getElementsByTagName('body');
+            var height = Math.max(html.scrollHeight, html.offsetHeight, body.scrollHeight, body.offsetHeight);
+            */
 
             // Send the height to the parent.
-            that.sendMessage('height', height);
+            that.sendMessage('height', height.toString());
+            body.style["visibility"] = 'visible'; 
         };
 
         /**
