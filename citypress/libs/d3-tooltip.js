@@ -27,8 +27,8 @@ D3Tooltip.prototype.show = function() {
   //        .style('top', (this.d3.event.pageY - 28) + 'px')
     
   this.visible = true;
-  this.$el.style('left',  (this.d3.event.pageX - 100) + 'px')
-          .style('top', (this.d3.event.pageY + 0) + 'px')
+  this.$el.style('left',  '0px')
+          .style('top', (this.d3.event.pageY + 18) + 'px')
 
 }
 
