@@ -8,7 +8,7 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   viewBox="0 0 100.00021 238.29025"
+   viewBox="0 0 100.20022 242.44217"
    width="100%"
    class="roadmap"
    id="svg11848"
@@ -42,20 +42,20 @@
      inkscape:window-height="744"
      id="namedview11956"
      showgrid="false"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
+     fit-margin-top="0.1"
+     fit-margin-left="0.1"
+     fit-margin-right="0.1"
+     fit-margin-bottom="0.1"
      inkscape:zoom="7.1200941"
-     inkscape:cx="53.213401"
-     inkscape:cy="215.45904"
+     inkscape:cx="59.071753"
+     inkscape:cy="-16.019632"
      inkscape:window-x="65"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg11848" />
   <g
      id="g4302"
-     transform="matrix(0.39840637,0,0,0.39840637,1.0443927e-4,32.52721)">
+     transform="matrix(0.39840637,0,0,0.39840637,0.10010604,32.205867)">
     <path
        inkscape:connector-curvature="0"
        id="path11850"
@@ -467,7 +467,7 @@
   </g>
   <g
      id="g5272-6"
-     transform="matrix(0.39009971,0,0,0.39009971,3.9011011,8.3187563)">
+     transform="matrix(0.39009971,0,0,0.39009971,4.0011027,7.9974134)">
     <rect
        id="rect10514-5"
        style="opacity:0.4;fill:#ffb380;stroke:#000000;stroke-width:0.4665474;stroke-miterlimit:4;stroke-dasharray:none"
@@ -557,7 +557,7 @@
   </g>
   <g
      id="g4656-99"
-     transform="matrix(0.39009971,0,0,0.39009971,14.621253,4.7422417)">
+     transform="matrix(0.39009971,0,0,0.39009971,14.721255,4.4208988)">
     <text
        style="font-size:9px;fill:#1a1a1a;fill-opacity:1"
        y="93.510292"
@@ -576,7 +576,7 @@
   </g>
   <g
      id="g4656-99-3"
-     transform="matrix(0.39009971,0,0,0.39009971,14.629824,48.462397)">
+     transform="matrix(0.39009971,0,0,0.39009971,14.729826,48.141054)">
     <text
        style="font-size:9px;fill:#1a1a1a;fill-opacity:1"
        y="93.510292"
@@ -595,7 +595,7 @@
   </g>
   <g
      id="g4656-99-39"
-     transform="matrix(0.39009971,0,0,0.39009971,14.624681,153.74745)">
+     transform="matrix(0.39009971,0,0,0.39009971,14.724683,153.42611)">
     <text
        style="font-size:9px;fill:#1a1a1a;fill-opacity:1"
        y="93.510292"
@@ -614,7 +614,7 @@
   </g>
   <g
      id="g4656-99-9"
-     transform="matrix(0.39009971,0,0,0.39009971,14.629824,190.46943)">
+     transform="matrix(0.39009971,0,0,0.39009971,14.729826,190.14809)">
     <text
        style="font-size:9px;fill:#1a1a1a;fill-opacity:1"
        y="93.510292"
@@ -634,13 +634,25 @@
   <text
      xml:space="preserve"
      style="font-size:6px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:5.11000013px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
-     x="13.170771"
-     y="4.7338428"
+     x="13.270772"
+     y="4.4124999"
      id="text7017"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan7019"
-       x="13.170771"
-       y="4.7338428"
+       x="13.270772"
+       y="4.4124999"
        style="letter-spacing:-0.02px;fill:#333333;fill-opacity:1">N3: Johannesburg - Durban</tspan></text>
+  <text
+     sodipodi:linespacing="125%"
+     id="text7017-3"
+     y="241.74597"
+     x="100.20401"
+     style="font-size:6px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:5.11000013px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+     xml:space="preserve"><tspan
+       style="font-size:3px;text-align:end;letter-spacing:-0.02px;text-anchor:end;fill:#333333;fill-opacity:1"
+       y="241.74597"
+       x="100.18401"
+       id="tspan7019-8"
+       sodipodi:role="line">Tap the bubbles for more information</tspan></text>
 </svg>

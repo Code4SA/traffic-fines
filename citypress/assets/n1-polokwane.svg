@@ -8,7 +8,7 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   viewBox="0 0 100.00022 112.56364"
+   viewBox="0 0 100.19962 116.96271"
    width="100%"
    class="roadmap"
    id="svg12124"
@@ -42,19 +42,19 @@
      inkscape:window-height="744"
      id="namedview12172"
      showgrid="false"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
+     fit-margin-top="0.1"
+     fit-margin-left="0.1"
+     fit-margin-right="0.1"
+     fit-margin-bottom="0.1"
      inkscape:zoom="7.1200938"
-     inkscape:cx="36.866026"
-     inkscape:cy="45.435091"
+     inkscape:cx="53.960075"
+     inkscape:cy="-16.978444"
      inkscape:window-x="65"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg12124" />
   <path
-     d="m 50.000107,42.960821 0,62.026879"
+     d="m 50.099998,42.358584 0,62.026876"
      class="road"
      style="fill:#000000;stroke:#343434;stroke-width:0.79681277px"
      id="path12126"
@@ -62,7 +62,7 @@
   <g
      class="windows"
      id="g12128"
-     transform="matrix(0.39840638,0,0,0.39840638,0.19931038,32.407641)">
+     transform="matrix(0.39840638,0,0,0.39840638,0.29920153,31.805404)">
     <rect
        x="0"
        width="250"
@@ -81,7 +81,7 @@
   <g
      class="windows"
      id="g12134"
-     transform="matrix(0.39840638,0,0,0.39840638,0.19931038,32.407641)">
+     transform="matrix(0.39840638,0,0,0.39840638,0.29920153,31.805404)">
     <rect
        x="0"
        width="250"
@@ -100,7 +100,7 @@
   <g
      class="bubble"
      data-munic="JHB"
-     transform="matrix(0.39840638,0,0,0.39840638,45.423027,42.960821)"
+     transform="matrix(0.39840638,0,0,0.39840638,45.522918,42.358584)"
      id="g12140">
     <circle
        r="11.48847"
@@ -118,7 +118,7 @@
   <g
      class="bubble"
      data-munic="TSH"
-     transform="matrix(0.39840638,0,0,0.39840638,49.121581,54.392521)"
+     transform="matrix(0.39840638,0,0,0.39840638,49.221472,53.790284)"
      id="g12146">
     <circle
        r="2.205097"
@@ -136,7 +136,7 @@
   <g
      class="bubble"
      data-munic="LIM366"
-     transform="matrix(0.39840638,0,0,0.39840638,45.703143,65.544101)"
+     transform="matrix(0.39840638,0,0,0.39840638,45.803034,64.941864)"
      id="g12150">
     <circle
        r="10.785379"
@@ -154,7 +154,7 @@
   <g
      class="bubble"
      data-munic="LIM365"
-     transform="matrix(0.39840638,0,0,0.39840638,47.518067,78.299201)"
+     transform="matrix(0.39840638,0,0,0.39840638,47.617958,77.696964)"
      id="g12154">
     <circle
        r="6.2299156"
@@ -172,7 +172,7 @@
   <g
      class="bubble"
      data-munic="LIM364"
-     transform="matrix(0.39840638,0,0,0.39840638,49.203294,87.554141)"
+     transform="matrix(0.39840638,0,0,0.39840638,49.303185,86.951904)"
      id="g12158">
     <circle
        r="2"
@@ -190,7 +190,7 @@
   <g
      class="bubble"
      data-munic="LIM367"
-     transform="matrix(0.39840638,0,0,0.39840638,48.412258,95.914901)"
+     transform="matrix(0.39840638,0,0,0.39840638,48.512149,95.312664)"
      id="g12162">
     <circle
        r="3.9854999"
@@ -208,7 +208,7 @@
   <g
      class="bubble"
      data-munic="LIM354"
-     transform="matrix(0.39840638,0,0,0.39840638,48.491258,104.9877)"
+     transform="matrix(0.39840638,0,0,0.39840638,48.591149,104.38546)"
      id="g12166">
     <circle
        r="3.787214"
@@ -225,7 +225,7 @@
   </g>
   <g
      id="g5272-6"
-     transform="matrix(0.39009971,0,0,0.39009971,3.9011039,8.0378783)">
+     transform="matrix(0.39009971,0,0,0.39009971,4.000995,7.4356417)">
     <rect
        id="rect10514-5"
        style="opacity:0.4;fill:#ffb380;stroke:#000000;stroke-width:0.4665474;stroke-miterlimit:4;stroke-dasharray:none"
@@ -316,18 +316,18 @@
   <text
      xml:space="preserve"
      style="font-size:6px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:5.11000013px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
-     x="8.2788973"
-     y="5.0147367"
+     x="8.378788"
+     y="4.4124999"
      id="text7017"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan7019"
-       x="8.2788973"
-       y="5.0147367"
+       x="8.378788"
+       y="4.4124999"
        style="letter-spacing:-0.02px;fill:#333333;fill-opacity:1">N1: Johannesburg - Polokwane</tspan></text>
   <g
      id="g4656-99"
-     transform="matrix(0.39009972,0,0,0.39009972,14.621253,4.4234735)">
+     transform="matrix(0.39009972,0,0,0.39009972,14.721144,3.8212369)">
     <text
        style="font-size:9px;fill:#1a1a1a;fill-opacity:1"
        y="93.510292"
@@ -346,7 +346,7 @@
   </g>
   <g
      id="g4656-99-8"
-     transform="matrix(0.39009972,0,0,0.39009972,11.140262,66.450352)">
+     transform="matrix(0.39009972,0,0,0.39009972,11.240153,65.848115)">
     <text
        style="font-size:9px;fill:#1a1a1a;fill-opacity:1"
        y="93.510292"
@@ -365,7 +365,7 @@
   </g>
   <g
      id="g4656-99-3"
-     transform="matrix(0.39009972,0,0,0.39009972,14.622969,29.006753)">
+     transform="matrix(0.39009972,0,0,0.39009972,14.72286,28.404516)">
     <text
        style="font-size:9px;fill:#1a1a1a;fill-opacity:1"
        y="93.510292"
@@ -383,8 +383,8 @@
        style="font-size:9px;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1">R3.00</text>
   </g>
   <text
-     y="44.259647"
-     x="49.929184"
+     y="43.65741"
+     x="50.029076"
      id="text11896"
      style="font-size:4.78087664px;text-anchor:middle">
     <tspan
@@ -392,12 +392,24 @@
        id="tspan7858">2x</tspan>
   </text>
   <text
-     y="66.636139"
-     x="49.884384"
+     y="66.033905"
+     x="49.984276"
      id="text11896-3"
      style="font-size:4.78087664px;text-anchor:middle">
     <tspan
        style="font-size:3px"
        id="tspan7858-4">1.8x</tspan>
   </text>
+  <text
+     sodipodi:linespacing="125%"
+     id="text7017-3"
+     y="116.26653"
+     x="100.1998"
+     style="font-size:6px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:5.11000013px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+     xml:space="preserve"><tspan
+       style="font-size:3px;text-align:end;letter-spacing:-0.02px;text-anchor:end;fill:#333333;fill-opacity:1"
+       y="116.26653"
+       x="100.17979"
+       id="tspan7019-8"
+       sodipodi:role="line">Tap the bubbles for more information</tspan></text>
 </svg>

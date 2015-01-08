@@ -8,7 +8,7 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   viewBox="0 0 100.00021 392.67033"
+   viewBox="0 0 100.20021 397.40776"
    width="100%"
    class="roadmap"
    id="svg10928"
@@ -42,13 +42,13 @@
      inkscape:window-height="744"
      id="namedview11094"
      showgrid="false"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
+     fit-margin-top="0.1"
+     fit-margin-left="0.1"
+     fit-margin-right="0.1"
+     fit-margin-bottom="0.1"
      inkscape:zoom="5.6568542"
-     inkscape:cx="70.606303"
-     inkscape:cy="363.56987"
+     inkscape:cx="21.385603"
+     inkscape:cy="383.23332"
      inkscape:window-x="65"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
@@ -56,7 +56,7 @@
      inkscape:document-units="px" />
   <g
      id="g3835"
-     transform="matrix(0.39840637,0,0,0.39840637,1.0896347e-4,31.489008)">
+     transform="matrix(0.39840637,0,0,0.39840637,0.10010759,30.705126)">
     <g
        transform="matrix(1.0039992,0,0,1,0.49999852,0.66788327)"
        id="g10938"
@@ -686,7 +686,7 @@
   </g>
   <g
      id="g5272-6"
-     transform="matrix(0.39009971,0,0,0.39009971,3.9011039,7.1440909)">
+     transform="matrix(0.39009971,0,0,0.39009971,4.0011025,6.3602089)">
     <rect
        id="rect10514-5"
        style="opacity:0.4;fill:#ffb380;stroke:#000000;stroke-width:0.4665474;stroke-miterlimit:4;stroke-dasharray:none"
@@ -776,7 +776,7 @@
   </g>
   <g
      id="g4656-99"
-     transform="matrix(0.39009971,0,0,0.39009971,12.802516,3.6560159)">
+     transform="matrix(0.39009971,0,0,0.39009971,12.902515,2.8721339)">
     <text
        style="font-size:9px;fill:#1a1a1a;fill-opacity:1"
        y="93.510292"
@@ -795,7 +795,7 @@
   </g>
   <g
      id="g4656-99-6"
-     transform="matrix(0.39009971,0,0,0.39009971,12.432226,21.482638)">
+     transform="matrix(0.39009971,0,0,0.39009971,12.532225,20.698756)">
     <text
        style="font-size:9px;fill:#1a1a1a;fill-opacity:1"
        y="93.510292"
@@ -814,7 +814,7 @@
   </g>
   <g
      id="g4656-99-7"
-     transform="matrix(0.39009971,0,0,0.39009971,12.800802,41.955649)">
+     transform="matrix(0.39009971,0,0,0.39009971,12.900801,41.171767)">
     <text
        style="font-size:9px;fill:#1a1a1a;fill-opacity:1"
        y="93.510292"
@@ -833,7 +833,7 @@
   </g>
   <g
      id="g4656-99-0"
-     transform="matrix(0.39009971,0,0,0.39009971,12.821373,61.069461)">
+     transform="matrix(0.39009971,0,0,0.39009971,12.921372,60.285579)">
     <text
        style="font-size:9px;fill:#1a1a1a;fill-opacity:1"
        y="93.510292"
@@ -852,7 +852,7 @@
   </g>
   <g
      id="g4656-99-76"
-     transform="matrix(0.39009971,0,0,0.39009971,12.687657,93.961907)">
+     transform="matrix(0.39009971,0,0,0.39009971,12.787656,93.178025)">
     <text
        style="font-size:9px;fill:#1a1a1a;fill-opacity:1"
        y="93.510292"
@@ -871,7 +871,7 @@
   </g>
   <g
      id="g4656-99-5"
-     transform="matrix(0.39009971,0,0,0.39009971,12.821373,115.34334)">
+     transform="matrix(0.39009971,0,0,0.39009971,12.921372,114.55946)">
     <text
        style="font-size:9px;fill:#1a1a1a;fill-opacity:1"
        y="93.510292"
@@ -890,7 +890,7 @@
   </g>
   <g
      id="g4656-99-3"
-     transform="matrix(0.39009971,0,0,0.39009971,12.823087,139.91818)">
+     transform="matrix(0.39009971,0,0,0.39009971,12.923086,139.1343)">
     <text
        style="font-size:9px;fill:#1a1a1a;fill-opacity:1"
        y="93.510292"
@@ -909,7 +909,7 @@
   </g>
   <g
      id="g4656-99-8"
-     transform="matrix(0.39009971,0,0,0.39009971,12.82823,344.85359)">
+     transform="matrix(0.39009971,0,0,0.39009971,12.928229,344.06971)">
     <text
        style="font-size:9px;fill:#1a1a1a;fill-opacity:1"
        y="93.510292"
@@ -929,13 +929,25 @@
   <text
      xml:space="preserve"
      style="font-size:6px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:5.11000013px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
-     x="17.201317"
-     y="5.2520461"
+     x="17.301313"
+     y="4.468164"
      id="text7017"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan7019"
-       x="17.201317"
-       y="5.2520461"
-       style="letter-spacing:-0.02px;fill:#333333;fill-opacity:1">N1: Cape Town - Durban</tspan></text>
+       x="17.301313"
+       y="4.468164"
+       style="letter-spacing:-0.02px;fill:#333333;fill-opacity:1">N2: Cape Town - Durban</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:6px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:5.11000013px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+     x="100.19991"
+     y="396.71158"
+     id="text7017-3"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan7019-8"
+       x="100.1799"
+       y="396.71158"
+       style="font-size:3px;text-align:end;letter-spacing:-0.02px;text-anchor:end;fill:#333333;fill-opacity:1">Tap the bubbles for more information</tspan></text>
 </svg>
