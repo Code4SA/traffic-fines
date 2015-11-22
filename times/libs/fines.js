@@ -1,5 +1,8 @@
-var baseurl = "http://code4sa.org/traffic-fines/times/";
-var baseurl = "";
+if (document.location.hostname == "localhost") {
+    var baseurl = "";
+} else {
+    var baseurl = "http://code4sa.org/traffic-fines/times/";
+}
 
 document.write('<script type="text/javascript" src="' + baseurl + 'assets/pym.js"></script>')
 document.write(
