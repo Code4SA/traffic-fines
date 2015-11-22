@@ -8,45 +8,27 @@
 <body>
     <div id="n2" class="roadmap"></div>
             
-    <script src="assets/lib.js" type="text/javascript" charset="utf-8"></script>
+    <script src="libs/d3.v3.js" type="text/javascript" charset="utf-8"></script>
+    <script src="libs/d3-tooltip.js" type="text/javascript" charset="utf-8"></script>
+    <script src="libs/queue.v1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="libs/template.js" type="text/javascript" charset="utf-8"></script>
+    <script src="libs/main.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" src="assets/pym.js"></script>
 
     <script type="text/html" id="tt_template">
     <h3><%=Name%></h3>
     <table>
-        <tr>
-            <td>Population</td>
-            <td><%=fpopulation%></td>
-        </tr>
-        <tr>
-            <td>Fine Revenue (2014):</td>
-            <td><%=ftotal_fines%></td>
-        </tr>
-        <tr>
-            <td>Overall Revenue:</td>
-            <td><%=ftotal_budget%></td>
-        </tr>
-        <tr>
-            <td>Fines as % of revenue:</td>
-            <td><%=fperc_fines%>%</td>
-        </tr>
-        <tr>
-            <td>Fine Revenue:</td>
-            <td><%=ffines_per_capita%></td>
-        </tr>
-        <tr>
-            <td colspan="2"><h4>Compared to National Average</h4></td>
-        </tr>
-        <tr>
-            <td>Per capita:</td>
-            <td><%=fnat_per_capita%></td>
-        </tr>
-        <tr>
-            <td>% of revenue::</td>
-            <td><%=fnat_perc_budget%></td>
-        </tr>
+        <tr><th>Population:</th><td><%=fpopulation%></td></tr>
+        <tr><th>Fine Revenue (2014):</th><td><%=ftotal_fines%></td></tr>
+        <tr><th>Overall Revenue:</th><td><%=ftotal_budget%></td></tr>
+        <tr><th>Fines as % of revenue:</th><td><%=fperc_fines%></td></tr>
+        <tr><th>Fine Revenue <br/>per capita (monthly):</th><td><%=ffines_per_capita%></td></tr>
+        <tr><td colspan="2"><h4>Compared to National Average</h4></td></tr>
+        <tr><th>Per capita:</th><td><%=fnat_per_capita%> </td></tr>
+        <tr><th>% of revenue:</th><td><%=fnat_perc_budget%> </td></tr>
     </table>
     </script>
+
 
     <script>
     var pymChild = new pym.Child();

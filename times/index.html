@@ -1,12 +1,23 @@
 <html>
 <head>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/base.css">
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>Embed code like this:</h3>
+            <pre>
+&lt;div id="n1" class="roadmap">&lt;/div>
+&lt;div id="n2" class="roadmap">&lt;/div>
+&lt;div id="n3" class="roadmap">&lt;/div>
+&lt;script src="http://www.code4sa.org/traffic-fines/times/assets/fines.js">&lt;/script>
+            </pre>
+        </div>
+    </div>
+<div class="row">
+    <div class="col-md-4">
 Lorem ipsum dolor sit amet, ut qui debitis fabellas. Ex blandit referrentur usu, nec scaevola evertitur cu. Vim ne cotidieque contentiones, mei at cibo equidem philosophia, mel an choro nonumy nemore. Eam laudem aliquip repudiare ut, ius volumus ancillae vulputate ne. Vim ea omnes scribentur, porro epicuri accommodare an eam, id fabulas iracundia sadipscing usu.
 
 Saepe probatus deserunt te quo, mel id wisi tamquam. Sea cu legere assentior, ne ius nibh moderatius dissentiet. Pri no decore accusamus. Nihil aeterno verterem vel ei.
@@ -39,40 +50,8 @@ Et omnis illud semper nec, te graeci melius disputationi vix, nemore animal effi
             <div id="n3" class="roadmap col-md-4"></div>
             <div class="col-md-4">Lorem ipsum dolor sit amet, ut qui debitis fabellas. Ex blandit referrentur usu, nec scaevola evertitur cu. Vim ne cotidieque contentiones, mei at cibo equidem philosophia, mel an choro nonumy nemore. Eam laudem aliquip repudiare ut, ius volumus ancillae vulputate ne. Vim ea omnes scribentur, porro epicuri accommodare an eam, id fabulas iracundia sadipscing usu.</div>
         </div>
-        <div class="row">
-            <div class="col-md-4">Lorem ipsum dolor sit amet, ut qui debitis fabellas. Ex blandit referrentur usu, nec scaevola evertitur cu. Vim ne cotidieque contentiones, mei at cibo equidem philosophia, mel an choro nonumy nemore. Eam laudem aliquip repudiare ut, ius volumus ancillae vulputate ne. Vim ea omnes scribentur, porro epicuri accommodare an eam, id fabulas iracundia sadipscing usu.</div>
-            <div id="n1p" class="roadmap col-md-4"></div>
-            <div class="col-md-4">Lorem ipsum dolor sit amet, ut qui debitis fabellas. Ex blandit referrentur usu, nec scaevola evertitur cu. Vim ne cotidieque contentiones, mei at cibo equidem philosophia, mel an choro nonumy nemore. Eam laudem aliquip repudiare ut, ius volumus ancillae vulputate ne. Vim ea omnes scribentur, porro epicuri accommodare an eam, id fabulas iracundia sadipscing usu.</div>
-        </div>
     </div>
-    <script src="libs/d3.v3.js" type="text/javascript" charset="utf-8"></script>
-    <script src="libs/d3-tooltip.js" type="text/javascript" charset="utf-8"></script>
-    <script src="libs/queue.v1.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="libs/template.js" type="text/javascript" charset="utf-8"></script>
-    <script src="libs/main.js" type="text/javascript" charset="utf-8"></script>
+    <script src="libs/fines.js" type="text/javascript" charset="utf-8"></script>
 
-    <script type="text/html" id="tt_template">
-    <h3><%=Name%></h3>
-    <dl class="dl-horizontal">
-        <dt>Population:</dt><dd><%=fpopulation%></dd>
-        <dt>Fine Revenue (2014):</dt><dd><%=ftotal_fines%></dd>
-        <dt>Overall Revenue:</dt><dd><%=ftotal_budget%></dd>
-        <dt>Fines as % of revenue:</dt><dd><%=fperc_fines%></dd>
-        <dt>Fine Revenue <br/>per capita (monthly):</dt><dd><%=ffines_per_capita%></dd>
-    </dl>
-    <h4>Compared to National Average</h4>
-    <dl class="dl-horizontal">
-        <dt>Per capita:</dt><dd><%=fnat_per_capita%> </dd>
-        <dt>% of revenue:</dt><dd><%=fnat_perc_budget%> </dd>
-    </dl>
-    </script>
-
-    <script>
-    var datapath = "assets/data.csv";
-    load_data(d3.select("#n1.roadmap"), "assets/n1.svg", datapath);
-    load_data(d3.select("#n2.roadmap"), "assets/n2.svg", datapath);
-    load_data(d3.select("#n3.roadmap"), "assets/n3.svg", datapath);
-    load_data(d3.select("#n1p.roadmap"), "assets/n1-polokwane.svg", datapath);
-    </script>
 </body>
 </html>

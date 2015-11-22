@@ -41,7 +41,7 @@ var create_tooltip = function(data) {
     var fmtr = function(x) {
         if (isNaN(x))
             return "N/A"
-        return "R" + parseInt(x).toLocaleString();
+        return "R" + round2(x).toLocaleString();
     }
 
     var fmtp = function(x) {
