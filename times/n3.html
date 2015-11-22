@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <link href="assets/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/base.css">
+    </head>
+
+<body>
+    <div id="n3" class="roadmap"></div>
+            
+    <script src="assets/lib.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="assets/pym.js"></script>
+
+    <script type="text/html" id="tt_template">
+    <h3><%=Name%></h3>
+    <table>
+        <tr>
+            <td>Population</td>
+            <td><%=fpopulation%></td>
+        </tr>
+        <tr>
+            <td>Fine Revenue (2014):</td>
+            <td><%=ftotal_fines%></td>
+        </tr>
+        <tr>
+            <td>Overall Revenue:</td>
+            <td><%=ftotal_budget%></td>
+        </tr>
+        <tr>
+            <td>Fines as % of revenue:</td>
+            <td><%=fperc_fines%>%</td>
+        </tr>
+        <tr>
+            <td>Fine Revenue:</td>
+            <td><%=ffines_per_capita%></td>
+        </tr>
+        <tr>
+            <td colspan="2"><h4>Compared to National Average</h4></td>
+        </tr>
+        <tr>
+            <td>Per capita:</td>
+            <td><%=fnat_per_capita%></td>
+        </tr>
+        <tr>
+            <td>% of revenue::</td>
+            <td><%=fnat_perc_budget%></td>
+        </tr>
+    </table>
+    </script>
+
+    <script>
+    var pymChild = new pym.Child();
+    load_data(d3.select("#n3.roadmap"), "assets/n3.svg", "assets/data.csv", function() {
+        pymChild.sendHeight();
+    });
+    </script>
+</body>
+</html>
+
