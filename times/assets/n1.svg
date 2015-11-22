@@ -8,7 +8,7 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   viewBox="-10 0 100.2 314.40224"
+   viewBox="0 0 100.20021 320"
    width="100%"
    class="roadmap"
    id="svg10508"
@@ -47,702 +47,739 @@
      fit-margin-left="0.1"
      fit-margin-right="0.1"
      fit-margin-bottom="0.1"
-     inkscape:zoom="2"
-     inkscape:cx="154.92229"
-     inkscape:cy="264.46315"
+     inkscape:zoom="9.6299317"
+     inkscape:cx="56.760942"
+     inkscape:cy="-1.1048113"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg10508"
      showguides="true"
-     inkscape:guide-bbox="true" />
-  <path
-     d="m -14.773884,-267.39117 0,255.48659"
-     class="road"
-     style="fill:#000000;stroke:#343434;stroke-width:0.78019941px"
-     id="path10510"
-     inkscape:connector-curvature="0"
-     transform="matrix(1,0,0,-1,51.975657,32.208533)" />
+     inkscape:guide-bbox="true"
+     units="px" />
   <g
-     class="windows"
-     id="g10512"
-     transform="matrix(0.40584737,0,0,-0.39009971,-19.53256,309.85054)">
-    <rect
-       x="4.5774856"
-       width="245.427"
-       y="-0.0046777781"
-       height="290.83908"
-       rx="10.426825"
-       ry="9.9992609"
-       data-province="WC"
-       style="opacity:0.4;fill:#435678;stroke:#000000;stroke-width:0.45686972;stroke-miterlimit:4;stroke-dasharray:none"
-       id="rect10514"
-       transform="translate(19.642427,0)" />
-    <text
-       transform="matrix(0,1,1,0,19.642531,278.33469)"
-       style="font-size:12px;text-anchor:middle"
-       id="text10516"
-       x="-139.05894"
-       y="24.37553">Western Cape</text>
-  </g>
-  <g
-     class="windows"
-     id="g10518"
-     transform="matrix(0.40581562,0,0,-0.39009971,-11.552833,309.85054)">
-    <rect
-       x="4.5584841"
-       width="245.44611"
-       y="290.8251"
-       height="198.10638"
-       rx="10.427644"
-       ry="9.9989138"
-       data-province="NC"
-       style="opacity:0.4;fill:#862346;stroke:#000000;stroke-width:0.45688757;stroke-miterlimit:4;stroke-dasharray:none"
-       id="rect10520" />
-    <text
-       transform="matrix(0,1,1,0,0,779.19403)"
-       style="font-size:12px;text-anchor:middle"
-       id="text10522"
-       x="-389.87827"
-       y="24.568316">Northern Cape</text>
-  </g>
-  <g
-     class="windows"
-     id="g10524"
-     transform="matrix(0.39009971,0,0,-0.39009971,-11.560691,309.85054)">
-    <rect
-       x="4.7622447"
-       width="255.33443"
-       y="488.9321"
-       height="146.9227"
-       rx="10.847744"
-       ry="9.9971838"
-       data-province="FS"
-       style="opacity:0.4;fill:#125743;stroke:#000000;stroke-width:0.46599999;stroke-miterlimit:4;stroke-dasharray:none"
-       id="rect10526" />
-    <text
-       style="text-anchor:middle"
-       id="text10528"
-       transform="matrix(0,1,1,0,0,1124.2244)"
-       x="-562.39343"
-       y="25">Free State</text>
-  </g>
-  <g
-     class="windows"
-     id="g10530"
-     transform="matrix(0.40581562,0,0,-0.39009971,-11.552833,309.85054)">
-    <rect
-       x="4.5585036"
-       width="245.44606"
-       y="635.85553"
-       height="71.841522"
-       rx="10.427648"
-       ry="9.9970169"
-       data-province="GT"
-       style="opacity:0.4;fill:#642376;stroke:#000000;stroke-width:0.45688757;stroke-miterlimit:4;stroke-dasharray:none"
-       id="rect10532" />
-    <text
-       transform="matrix(0,1,1,0,0,1343.9685)"
-       style="text-anchor:middle"
-       id="text10534"
-       x="-671.77625"
-       y="24.612732">Gauteng</text>
-  </g>
-  <g
-     class="bubble"
-     data-munic="CPT"
-     transform="matrix(0.39009971,0,0,-0.39009971,32.802424,299.5997)"
-     id="g10536">
-    <circle
-       r="11.277499"
-       transform="translate(11.277499,0)"
-       style="fill:#ff2b2b;stroke:#343434;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
-       id="circle10538"
-       cx="0"
-       cy="0" />
-    <text
-       id="text7383"
-       transform="matrix(1,0,0,-1,3.8097256,-4.3740234)">4x</text>
-  </g>
-  <g
-     class="bubble"
-     data-munic="WC023"
-     transform="matrix(0.39009971,0,0,-0.39009971,34.020323,286.1674)"
-     id="g10542">
-    <circle
-       r="8.1554794"
-       transform="translate(8.1554797,0)"
-       style="fill:#ff2b2b;stroke:#343434;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
-       id="circle10544"
-       cx="0"
-       cy="0" />
-    <text
-       id="text7381"
-       transform="matrix(1,0,0,-1,0.68770626,-4.3740234)">4x</text>
-  </g>
-  <g
-     class="bubble"
-     data-munic="WC025"
-     transform="matrix(0.39009971,0,0,-0.39009971,30.847635,270.78032)"
-     id="g10546">
-    <circle
-       r="16.288498"
-       transform="translate(16.288498,0)"
-       style="fill:#ff2b2b;stroke:#343434;stroke-width:1px"
-       id="circle10548"
-       cx="0"
-       cy="0" />
-    <text
-       dy="0"
-       style="text-anchor:middle;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
-       id="text10552"
-       x="16.288498"
-       y="4.3740234"
-       transform="matrix(1,0,0,-1,-0.09667961,0)">4x</text>
-  </g>
-  <g
-     class="bubble"
-     data-munic="WC051"
-     transform="matrix(0.39009971,0,0,-0.39009971,22.371336,243.74425)"
-     id="g10554">
-    <circle
-       r="38.01704"
-       transform="translate(38.017041,0)"
-       style="fill:#ff2b2b;stroke:#343434;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
-       id="circle10556"
-       cx="0"
-       cy="0" />
-    <text
-       dy="0"
-       style="text-anchor:middle"
-       id="text10560"
-       x="38.01704"
-       y="4.3681641"
-       transform="matrix(1,0,0,-1,-0.24316332,0)">23x</text>
-  </g>
-  <g
-     class="bubble"
-     data-munic="WC053"
-     transform="matrix(0.39009971,0,0,-0.39009971,26.795335,212.65588)"
-     id="g10562">
-    <circle
-       r="26.676353"
-       transform="translate(26.676353,0)"
-       style="fill:#ff2b2b;stroke:#343434;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
-       id="circle10564"
-       cx="0"
-       cy="0" />
-    <text
-       dy="0"
-       style="text-anchor:middle"
-       id="text10568"
-       x="26.676353"
-       y="4.3740234"
-       transform="matrix(1,0,0,-1,-0.46289108,0)">11x</text>
-  </g>
-  <g
-     class="bubble"
-     data-munic="NC071"
-     transform="matrix(0.39009971,0,0,-0.39009971,16.68308,173.53865)"
-     id="g10570">
-    <circle
-       r="52.598583"
-       transform="translate(52.598585,0)"
-       style="fill:#ff2b2b;stroke:#343434;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
-       id="circle10572"
-       cx="0"
-       cy="0" />
-    <text
-       dy="0"
-       style="text-anchor:middle"
-       id="text10576"
-       x="52.598583"
-       y="4.3681641"
-       transform="matrix(1,0,0,-1,-0.09667791,0)">43x</text>
-  </g>
-  <g
-     class="bubble"
-     data-munic="NC073"
-     transform="matrix(0.39009971,0,0,-0.39009971,31.285564,143.59286)"
-     id="g10578">
-    <circle
-       r="15.16589"
-       transform="translate(15.16589,0)"
-       style="fill:#ff2b2b;stroke:#343434;stroke-width:1px"
-       id="circle10580"
-       cx="0"
-       cy="0" />
-    <text
-       dy="0"
-       style="text-anchor:middle;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
-       id="text10584"
-       x="15.16589"
-       y="4.3740234"
-       transform="matrix(1,0,0,-1,-0.09667943,0)">4x</text>
-  </g>
-  <g
-     class="bubble"
-     data-munic="NC072"
-     transform="matrix(0.39009971,0,0,-0.39009971,33.775114,128.39849)"
-     id="g10586">
-    <circle
-       r="8.7840652"
-       transform="translate(8.7840649,0)"
-       style="fill:#ff2b2b;stroke:#343434;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
-       id="circle10588"
-       cx="0"
-       cy="0" />
-  </g>
-  <g
-     class="bubble"
-     data-munic="FS162"
-     transform="matrix(0.39009971,0,0,-0.39009971,34.771483,115.12965)"
-     id="g10590">
-    <circle
-       r="6.2299156"
-       transform="translate(6.2299157,0)"
-       style="fill:#ff2b2b;stroke:#343434;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
-       id="circle10592"
-       cx="0"
-       cy="0" />
-  </g>
-  <g
-     class="bubble"
-     data-munic="MAN"
-     transform="matrix(0.39009971,0,0,-0.39009971,34.788074,105.99456)"
-     id="g10594">
-    <circle
-       r="6.1873899"
-       transform="translate(6.1873897,0)"
-       style="fill:#ff2b2b;stroke:#343434;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
-       id="circle10596"
-       cx="0"
-       cy="0" />
-    <text
-       id="text7389"
-       transform="matrix(1,0,0,-1,-1.2803837,-4.3740234)">4x</text>
-  </g>
-  <g
-     class="bubble"
-     data-munic="FS181"
-     transform="matrix(0.39009971,0,0,-0.39009971,36.421574,96.949173)"
-     id="g10598">
-    <circle
-       r="2"
-       transform="translate(2,0)"
-       style="fill:#ff2b2b;stroke:#343434;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
-       id="circle10600"
-       cx="0"
-       cy="0" />
-  </g>
-  <g
-     class="bubble"
-     data-munic="FS184"
-     transform="matrix(0.39009971,0,0,-0.39009971,35.184361,88.300063)"
-     id="g10602">
-    <circle
-       r="5.1715255"
-       transform="translate(5.1715257,0)"
-       style="fill:#ff2b2b;stroke:#343434;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
-       id="circle10604"
-       cx="0"
-       cy="0" />
-  </g>
-  <g
-     class="bubble"
-     data-munic="FS201"
-     transform="matrix(0.39009971,0,0,-0.39009971,35.575635,78.805013)"
-     id="g10606">
-    <circle
-       r="4.1685233"
-       transform="translate(4.1685233,0)"
-       style="fill:#ff2b2b;stroke:#343434;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
-       id="circle10608"
-       cx="0"
-       cy="0" />
-  </g>
-  <g
-     class="bubble"
-     data-munic="FS203"
-     transform="matrix(0.39009971,0,0,-0.39009971,35.364685,69.490293)"
-     id="g10610">
-    <circle
-       r="4.70928"
-       transform="translate(4.70928,0)"
-       style="fill:#ff2b2b;stroke:#343434;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
-       id="circle10612"
-       cx="0"
-       cy="0" />
-  </g>
-  <g
-     class="bubble"
-     data-munic="GT421"
-     transform="matrix(0.39009971,0,0,-0.39009971,33.524046,56.563583)"
-     id="g10614">
-    <circle
-       r="9.4276571"
-       transform="translate(9.4276572,0)"
-       style="fill:#ff2b2b;stroke:#343434;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
-       id="circle10616"
-       cx="0"
-       cy="0" />
-    <text
-       id="text7385"
-       transform="matrix(1,0,0,-1,1.9598838,-4.3740234)">4x</text>
-  </g>
-  <g
-     class="bubble"
-     data-munic="JHB"
-     transform="matrix(0.39009971,0,0,-0.39009971,32.720125,44.113113)"
-     id="g10618">
-    <circle
-       r="11.48847"
-       transform="translate(11.48847,0)"
-       style="fill:#ff2b2b;stroke:#343434;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
-       id="circle10620"
-       cx="0"
-       cy="0" />
-    <text
-       id="text7387"
-       transform="matrix(1,0,0,-1,4.0206966,-4.3740234)">4x</text>
-  </g>
-  <g
-     id="g4656"
-     transform="matrix(0.39009971,0,0,-0.39009971,1.3006322,309.02957)">
+     id="g8030">
+    <path
+       transform="matrix(1,0,0,-1,61.975657,32.20849)"
+       inkscape:connector-curvature="0"
+       id="path10510"
+       style="fill:#000000;stroke:#343434;stroke-width:0.78019941px"
+       class="road"
+       d="m -14.773884,-267.39117 0,255.48659" />
     <g
-       id="g7426">
+       transform="matrix(0.40584737,0,0,-0.39009971,-9.5325598,309.85054)"
+       id="g10512"
+       class="windows">
+      <rect
+         transform="translate(19.642427,0)"
+         id="rect10514"
+         style="opacity:0.4;fill:#435678;stroke:#000000;stroke-width:0.45686972;stroke-miterlimit:4;stroke-dasharray:none"
+         data-province="WC"
+         ry="9.9992609"
+         rx="10.426825"
+         height="290.83908"
+         y="-0.0046777781"
+         width="245.427"
+         x="4.5774856" />
       <text
-         transform="matrix(1,0,0,-1,0,197.5769)"
-         class="munic-label"
-         id="text10550"
-         x="207.19768"
-         y="93.510292"
-         style="font-size:9px;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1">
-        <tspan
-           style="font-size:9px;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
-           id="tspan3685">Breede Valley</tspan>
-      </text>
-      <text
-         transform="matrix(1,0,0,-1,0,202.70379)"
-         style="font-size:9px;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
-         id="text10560-8-1"
-         x="207.51994"
-         y="110.77706">R25.99</text>
+         y="24.37553"
+         x="-139.05894"
+         id="text10516"
+         style="font-size:12px;text-anchor:middle"
+         transform="matrix(0,1,1,0,19.642531,278.33469)">Western Cape</text>
     </g>
-  </g>
-  <g
-     id="g5272"
-     transform="matrix(0.39009971,0,0,0.39009971,-5.999003,9.32749)">
-    <rect
-       id="rect10514-5"
-       style="opacity:0.4;fill:#ffb380;stroke:#000000;stroke-width:0.46599999;stroke-miterlimit:4;stroke-dasharray:none"
-       data-province="WC"
-       ry="9.9992609"
-       rx="10.847737"
-       height="61.775391"
-       y="0.233"
-       width="255.87872"
-       x="-9.7670002" />
     <g
-       data-munic="Summary"
-       class="bubble"
-       id="g9005-3"
-       transform="translate(103.57115,31.671053)">
+       transform="matrix(0.40581562,0,0,-0.39009971,-1.5528328,309.85054)"
+       id="g10518"
+       class="windows">
+      <rect
+         id="rect10520"
+         style="opacity:0.4;fill:#862346;stroke:#000000;stroke-width:0.45688757;stroke-miterlimit:4;stroke-dasharray:none"
+         data-province="NC"
+         ry="9.9989138"
+         rx="10.427644"
+         height="198.10638"
+         y="290.8251"
+         width="245.44611"
+         x="4.5584841" />
+      <text
+         y="24.568316"
+         x="-389.87827"
+         id="text10522"
+         style="font-size:12px;text-anchor:middle"
+         transform="matrix(0,1,1,0,0,779.19403)">Northern Cape</text>
+    </g>
+    <g
+       transform="matrix(0.39009971,0,0,-0.39009971,-1.5606908,309.85054)"
+       id="g10524"
+       class="windows">
+      <rect
+         id="rect10526"
+         style="opacity:0.4;fill:#125743;stroke:#000000;stroke-width:0.46599999;stroke-miterlimit:4;stroke-dasharray:none"
+         data-province="FS"
+         ry="9.9971838"
+         rx="10.847744"
+         height="146.9227"
+         y="488.9321"
+         width="255.33443"
+         x="4.7622447" />
+      <text
+         y="25"
+         x="-562.39343"
+         transform="matrix(0,1,1,0,0,1124.2244)"
+         id="text10528"
+         style="text-anchor:middle">Free State</text>
+    </g>
+    <g
+       transform="matrix(0.40581562,0,0,-0.39009971,-1.5528328,309.85054)"
+       id="g10530"
+       class="windows">
+      <rect
+         id="rect10532"
+         style="opacity:0.4;fill:#642376;stroke:#000000;stroke-width:0.45688757;stroke-miterlimit:4;stroke-dasharray:none"
+         data-province="GT"
+         ry="9.9970169"
+         rx="10.427648"
+         height="71.841522"
+         y="635.85553"
+         width="245.44606"
+         x="4.5585036" />
+      <text
+         y="24.612732"
+         x="-671.77625"
+         id="text10534"
+         style="text-anchor:middle"
+         transform="matrix(0,1,1,0,0,1343.9685)">Gauteng</text>
+    </g>
+    <g
+       id="g10536"
+       transform="matrix(0.39009971,0,0,-0.39009971,42.802424,299.5997)"
+       data-munic="CPT"
+       class="bubble">
       <circle
          cy="0"
          cx="0"
-         id="circle9007-3"
-         style="fill:#ff2b2b;stroke:#343434;stroke-width:0.79979551;stroke-miterlimit:4;stroke-dasharray:none"
-         transform="translate(7.171759,17.163086)"
-         r="8.0627928" />
-    </g>
-    <image
-       width="20.471485"
-       height="20.471485"
-       xlink:href="data:image/png;base64,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 "
-       id="image4503-9-01"
-       x="211.92181"
-       y="0.34100932" />
-    <g
-       transform="translate(37.232922,51.53653)"
-       id="g3824">
+         id="circle10538"
+         style="fill:#ff2b2b;stroke:#343434;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
+         transform="translate(11.277499,0)"
+         r="11.277499" />
       <text
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a"
-         class="munic-label"
-         id="text9009-2-6"
-         x="188.96263"
-         y="2.5217664">R5.35</text>
+         transform="matrix(1,0,0,-1,4.3182152,-3.5039305)"
+         id="text7383"
+         x="6.8818359"
+         y="0"
+         style="font-size:9.61292648px;text-align:center;text-anchor:middle">4x</text>
     </g>
-    <text
-       sodipodi:linespacing="125%"
-       id="text4861"
-       y="51.108311"
-       x="170.85222"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;letter-spacing:5.11000013px;word-spacing:0px;text-anchor:end;fill:#1a1a1a;fill-opacity:1;stroke:none"
-       xml:space="preserve"><tspan
-         id="tspan4863"
+    <g
+       id="g10542"
+       transform="matrix(0.39009971,0,0,-0.39009971,44.020323,286.1674)"
+       data-munic="WC023"
+       class="bubble">
+      <circle
+         cy="0"
+         cx="0"
+         id="circle10544"
+         style="fill:#ff2b2b;stroke:#343434;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
+         transform="translate(8.1554797,0)"
+         r="8.1554794" />
+      <text
+         transform="matrix(1,0,0,-1,1.1961959,-3.5039305)"
+         id="text7381"
+         x="6.8818359"
+         y="0"
+         style="font-size:9.61292648px;text-align:center;text-anchor:middle">4x</text>
+    </g>
+    <g
+       id="g10546"
+       transform="matrix(0.39009971,0,0,-0.39009971,40.847635,270.78032)"
+       data-munic="WC025"
+       class="bubble">
+      <circle
+         cy="0"
+         cx="0"
+         id="circle10548"
+         style="fill:#ff2b2b;stroke:#343434;stroke-width:1px"
+         transform="translate(16.288498,0)"
+         r="16.288498" />
+      <text
+         transform="matrix(1,0,0,-1,-0.07744775,0.87009296)"
+         y="4.3740234"
+         x="16.288498"
+         id="text10552"
+         style="font-size:9.61292648px;text-anchor:middle;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
+         dy="0">4x</text>
+    </g>
+    <g
+       id="g10554"
+       transform="matrix(0.39009971,0,0,-0.39009971,32.371336,243.74425)"
+       data-munic="WC051"
+       class="bubble">
+      <circle
+         cy="0"
+         cx="0"
+         id="circle10556"
+         style="fill:#ff2b2b;stroke:#343434;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
+         transform="translate(38.017041,0)"
+         r="38.01704" />
+      <text
+         transform="matrix(1,0,0,-1,-0.19479231,0.8689274)"
+         y="4.3681641"
+         x="38.01704"
+         id="text10560"
+         style="font-size:9.61292648px;text-anchor:middle"
+         dy="0">23x</text>
+    </g>
+    <g
+       id="g10562"
+       transform="matrix(0.39009971,0,0,-0.39009971,36.795335,212.65588)"
+       data-munic="WC053"
+       class="bubble">
+      <circle
+         cy="0"
+         cx="0"
+         id="circle10564"
+         style="fill:#ff2b2b;stroke:#343434;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
+         transform="translate(26.676353,0)"
+         r="26.676353" />
+      <text
+         transform="matrix(1,0,0,-1,-0.37081145,0.87009296)"
+         y="4.3740234"
+         x="26.676353"
+         id="text10568"
+         style="font-size:9.61292648px;text-anchor:middle"
+         dy="0">11x</text>
+    </g>
+    <g
+       id="g10570"
+       transform="matrix(0.39009971,0,0,-0.39009971,26.68308,173.53865)"
+       data-munic="NC071"
+       class="bubble">
+      <circle
+         cy="0"
+         cx="0"
+         id="circle10572"
+         style="fill:#ff2b2b;stroke:#343434;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
+         transform="translate(52.598585,0)"
+         r="52.598583" />
+      <text
+         transform="matrix(1,0,0,-1,-0.07744598,0.8689274)"
+         y="4.3681641"
+         x="52.598583"
+         id="text10576"
+         style="font-size:9.61292648px;text-anchor:middle"
+         dy="0">43x</text>
+    </g>
+    <g
+       id="g10578"
+       transform="matrix(0.39009971,0,0,-0.39009971,41.285564,143.59286)"
+       data-munic="NC073"
+       class="bubble">
+      <circle
+         cy="0"
+         cx="0"
+         id="circle10580"
+         style="fill:#ff2b2b;stroke:#343434;stroke-width:1px"
+         transform="translate(15.16589,0)"
+         r="15.16589" />
+      <text
+         transform="matrix(1,0,0,-1,-0.07744757,0.87009296)"
+         y="4.3740234"
+         x="15.16589"
+         id="text10584"
+         style="font-size:9.61292648px;text-anchor:middle;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
+         dy="0">4x</text>
+    </g>
+    <g
+       id="g10586"
+       transform="matrix(0.39009971,0,0,-0.39009971,43.775114,128.39849)"
+       data-munic="NC072"
+       class="bubble">
+      <circle
+         cy="0"
+         cx="0"
+         id="circle10588"
+         style="fill:#ff2b2b;stroke:#343434;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
+         transform="translate(8.7840649,0)"
+         r="8.7840652" />
+    </g>
+    <g
+       id="g10590"
+       transform="matrix(0.39009971,0,0,-0.39009971,44.771483,115.12965)"
+       data-munic="FS162"
+       class="bubble">
+      <circle
+         cy="0"
+         cx="0"
+         id="circle10592"
+         style="fill:#ff2b2b;stroke:#343434;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
+         transform="translate(6.2299157,0)"
+         r="6.2299156" />
+    </g>
+    <g
+       id="g10594"
+       transform="matrix(0.39009971,0,0,-0.39009971,44.788074,105.99456)"
+       data-munic="MAN"
+       class="bubble">
+      <circle
+         cy="0"
+         cx="0"
+         id="circle10596"
+         style="fill:#ff2b2b;stroke:#343434;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
+         transform="translate(6.1873897,0)"
+         r="6.1873899" />
+      <text
+         transform="matrix(1,0,0,-1,0.20512668,-3.5039305)"
+         id="text7389"
+         style="font-size:9.61292648px">4x</text>
+    </g>
+    <g
+       id="g10598"
+       transform="matrix(0.39009971,0,0,-0.39009971,46.421574,96.94917)"
+       data-munic="FS181"
+       class="bubble">
+      <circle
+         cy="0"
+         cx="0"
+         id="circle10600"
+         style="fill:#ff2b2b;stroke:#343434;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
+         transform="translate(2,0)"
+         r="2" />
+    </g>
+    <g
+       id="g10602"
+       transform="matrix(0.39009971,0,0,-0.39009971,45.184361,88.30004)"
+       data-munic="FS184"
+       class="bubble">
+      <circle
+         cy="0"
+         cx="0"
+         id="circle10604"
+         style="fill:#ff2b2b;stroke:#343434;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
+         transform="translate(5.1715257,0)"
+         r="5.1715255" />
+    </g>
+    <g
+       id="g10606"
+       transform="matrix(0.39009971,0,0,-0.39009971,45.575635,78.80497)"
+       data-munic="FS201"
+       class="bubble">
+      <circle
+         cy="0"
+         cx="0"
+         id="circle10608"
+         style="fill:#ff2b2b;stroke:#343434;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
+         transform="translate(4.1685233,0)"
+         r="4.1685233" />
+    </g>
+    <g
+       id="g10610"
+       transform="matrix(0.39009971,0,0,-0.39009971,45.364685,69.49025)"
+       data-munic="FS203"
+       class="bubble">
+      <circle
+         cy="0"
+         cx="0"
+         id="circle10612"
+         style="fill:#ff2b2b;stroke:#343434;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
+         transform="translate(4.70928,0)"
+         r="4.70928" />
+    </g>
+    <g
+       id="g10614"
+       transform="matrix(0.39009971,0,0,-0.39009971,43.524046,56.56354)"
+       data-munic="GT421"
+       class="bubble">
+      <circle
+         cy="0"
+         cx="0"
+         id="circle10616"
+         style="fill:#ff2b2b;stroke:#343434;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
+         transform="translate(9.4276572,0)"
+         r="9.4276571" />
+      <text
+         transform="matrix(1,0,0,-1,2.4683734,-3.5039305)"
+         id="text7385"
+         x="6.8818359"
+         y="0"
+         style="font-size:9.61292648px;text-align:center;text-anchor:middle">4x</text>
+    </g>
+    <g
+       id="g10618"
+       transform="matrix(0.39009971,0,0,-0.39009971,42.720125,44.11307)"
+       data-munic="JHB"
+       class="bubble">
+      <circle
+         cy="0"
+         cx="0"
+         id="circle10620"
+         style="fill:#ff2b2b;stroke:#343434;stroke-width:0.80000001;stroke-miterlimit:4;stroke-dasharray:none"
+         transform="translate(11.48847,0)"
+         r="11.48847" />
+      <text
+         transform="matrix(1,0,0,-1,4.5291862,-3.5039305)"
+         id="text7387"
+         x="6.8818359"
+         y="0"
+         style="font-size:9.61292648px;text-align:center;text-anchor:middle">4x</text>
+    </g>
+    <g
+       transform="matrix(0.39009971,0,0,-0.39009971,11.300632,309.02957)"
+       id="g4656">
+      <g
+         id="g7426">
+        <text
+           style="font-size:9px;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
+           y="93.510292"
+           x="207.19768"
+           id="text10550"
+           class="munic-label"
+           transform="matrix(1,0,0,-1,0,197.5769)">
+          <tspan
+             id="tspan3685"
+             style="font-size:9px;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1">Breede Valley</tspan>
+        </text>
+        <text
+           y="110.77706"
+           x="207.51994"
+           id="text10560-8-1"
+           style="font-size:9px;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
+           transform="matrix(1,0,0,-1,0,202.70379)">R25.99</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.39009971,0,0,0.39009971,4.0009972,9.3274504)"
+       id="g5272">
+      <rect
+         x="-9.7670002"
+         width="255.87872"
+         y="0.233"
+         height="61.775391"
+         rx="10.847737"
+         ry="9.9992609"
+         data-province="WC"
+         style="opacity:0.4;fill:#ffb380;stroke:#000000;stroke-width:0.46599999;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect10514-5" />
+      <g
+         transform="translate(103.57115,31.671053)"
+         id="g9005-3"
+         class="bubble"
+         data-munic="Summary">
+        <circle
+           r="8.0627928"
+           transform="translate(7.171759,17.163086)"
+           style="fill:#ff2b2b;stroke:#343434;stroke-width:0.79979551;stroke-miterlimit:4;stroke-dasharray:none"
+           id="circle9007-3"
+           cx="0"
+           cy="0" />
+      </g>
+      <image
+         y="0.34100932"
+         x="211.92181"
+         id="image4503-9-01"
+         xlink:href="data:image/png;base64,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 "
+         height="20.471485"
+         width="20.471485" />
+      <g
+         id="g3824"
+         transform="translate(37.232922,51.53653)">
+        <text
+           y="2.5217664"
+           x="188.96263"
+           id="text9009-2-6"
+           class="munic-label"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a">R5.35</text>
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;letter-spacing:5.11000013px;word-spacing:0px;text-anchor:end;fill:#1a1a1a;fill-opacity:1;stroke:none"
+         x="170.85222"
          y="51.108311"
-         x="89.728912"
-         sodipodi:role="line"><tspan
-           id="tspan4865"
-           style="font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;letter-spacing:0.98000002px;text-anchor:end;fill:#1a1a1a"
+         id="text4861"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           x="89.728912"
            y="51.108311"
-           x="88.748909">National Average</tspan></tspan></text>
-    <text
-       sodipodi:linespacing="125%"
-       id="text4849"
-       y="18.497944"
-       x="47.652588"
-       style="font-style:normal;font-weight:normal;font-size:11px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;letter-spacing:5.11000013px;word-spacing:0px;text-anchor:start;fill:#1a1a1a;fill-opacity:1;stroke:none"
-       xml:space="preserve"><tspan
-         style="font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start"
-         id="tspan4851"
-         y="18.497944"
-         x="60.349854"
-         sodipodi:role="line"><tspan
-           dx="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
-           id="tspan4853"
-           style="font-variant:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;letter-spacing:0.00000007px;text-anchor:start"
-           y="18.497944"
-           x="60.349854">Monthly fines per capita</tspan></tspan><tspan
-         style="font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start"
-         id="tspan4857"
-         y="32.247944"
-         x="34.94458"
-         sodipodi:role="line"><tspan
-           id="tspan4859"
-           style="font-variant:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;letter-spacing:0.00000007px;text-anchor:start"
-           y="32.247944"
-           x="34.94458"> compared to the national average</tspan></tspan></text>
-  </g>
-  <g
-     id="g4656-9"
-     transform="matrix(0.39009971,0,0,-0.39009971,4.1921891,281.9935)">
-    <g
-       id="g7421">
+           id="tspan4863"><tspan
+             x="88.748909"
+             y="51.108311"
+             style="font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;letter-spacing:0.98000002px;text-anchor:end;fill:#1a1a1a"
+             id="tspan4865">National Average</tspan></tspan></text>
       <text
-         transform="matrix(1,0,0,-1,0,198.49536)"
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:11px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;letter-spacing:5.11000013px;word-spacing:0px;text-anchor:start;fill:#1a1a1a;fill-opacity:1;stroke:none"
+         x="47.652588"
+         y="18.497944"
+         id="text4849"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           x="60.349854"
+           y="18.497944"
+           id="tspan4851"
+           style="font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start"><tspan
+             x="60.349854"
+             y="18.497944"
+             style="font-variant:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;letter-spacing:0.00000007px;text-anchor:start"
+             id="tspan4853"
+             dx="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0">Monthly fines per capita</tspan></tspan><tspan
+           sodipodi:role="line"
+           x="34.94458"
+           y="32.247944"
+           id="tspan4857"
+           style="font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start"><tspan
+             x="34.94458"
+             y="32.247944"
+             style="font-variant:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;letter-spacing:0.00000007px;text-anchor:start"
+             id="tspan4859"> compared to the national average</tspan></tspan></text>
+    </g>
+    <g
+       transform="matrix(0.39009971,0,0,-0.39009971,14.192189,281.9935)"
+       id="g4656-9">
+      <g
+         id="g7421">
+        <text
+           style="font-size:9px;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
+           y="93.510292"
+           x="200.34343"
+           id="text10550-6"
+           class="munic-label"
+           transform="matrix(1,0,0,-1,0,198.49536)">
+          <tspan
+             id="tspan3685-2"
+             style="font-size:9px;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1">Laingsburg</tspan>
+        </text>
+        <text
+           y="110.77706"
+           x="199.93327"
+           id="text10560-8-1-2"
+           style="font-size:9px;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
+           transform="matrix(1,0,0,-1,0,203.62225)">R172,.13</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.39009971,0,0,-0.39009971,10.703578,250.90513)"
+       id="g4656-9-7">
+      <g
+         id="g7416">
+        <text
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
+           y="93.510292"
+           x="208.47331"
+           id="text10550-6-4"
+           class="munic-label"
+           transform="matrix(1,0,0,-1,0,197.84497)">
+          <tspan
+             id="tspan3685-2-6"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1">Beaufort West</tspan>
+        </text>
+        <text
+           y="110.77706"
+           x="208.86003"
+           id="text10560-8-1-2-7"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
+           transform="matrix(1,0,0,-1,0,202.97186)">R68.89</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.39009971,0,0,-0.39009971,10.63672,211.7879)"
+       id="g4656-9-7-1">
+      <g
+         id="g7411">
+        <text
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
+           y="93.510292"
+           x="209.28191"
+           id="text10550-6-4-7"
+           class="munic-label"
+           transform="matrix(1,0,0,-1,0,197.95923)">
+          <tspan
+             id="tspan3685-2-6-8"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1">Ubuntu</tspan>
+        </text>
+        <text
+           y="110.77706"
+           x="208.86003"
+           id="text10560-8-1-2-7-2"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
+           transform="matrix(1,0,0,-1,0,203.08612)">R235.08</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.39009971,0,0,-0.39009971,6.7955331,181.7374)"
+       id="g4656-9-7-1-9">
+      <g
+         id="g7406">
+        <text
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
+           y="93.510292"
+           x="219.09343"
+           id="text10550-6-4-7-3"
+           class="munic-label"
+           transform="matrix(1,0,0,-1,0,197.95923)">
+          <tspan
+             id="tspan3685-2-6-8-2"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1">Emthanjeni</tspan>
+        </text>
+        <text
+           y="110.77706"
+           x="218.65398"
+           id="text10560-8-1-2-7-2-8"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
+           transform="matrix(1,0,0,-1,0,203.08612)">R38.41</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.39009971,0,0,-0.39009971,10.617291,81.58213)"
+       id="g4656-9-7-1-9-2">
+      <g
+         id="g7391">
+        <text
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
+           y="93.510292"
+           x="209.27019"
+           id="text10550-6-4-7-3-8"
+           class="munic-label"
+           transform="matrix(1,0,0,-1,0,197.95923)">
+          <tspan
+             id="tspan3685-2-6-8-2-6"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1">Johannesburg</tspan>
+        </text>
+        <text
+           y="110.77706"
+           x="208.86003"
+           id="text10560-8-1-2-7-2-8-1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
+           transform="matrix(1,0,0,-1,0,203.08612)">R3.57</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.39009971,0,0,-0.39009971,14.63029,337.10646)"
+       id="g4656-99">
+      <text
+         transform="matrix(1,0,0,-1,0,197.73511)"
          class="munic-label"
-         id="text10550-6"
-         x="200.34343"
+         id="text10550-5"
+         x="199.16765"
          y="93.510292"
-         style="font-size:9px;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1">
+         style="font-size:9px;fill:#1a1a1a;fill-opacity:1">
         <tspan
            style="font-size:9px;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
-           id="tspan3685-2">Laingsburg</tspan>
+           id="tspan3685-8">Cape Town</tspan>
       </text>
       <text
-         transform="matrix(1,0,0,-1,0,203.62225)"
+         transform="matrix(1,0,0,-1,0,202.862)"
          style="font-size:9px;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
-         id="text10560-8-1-2"
-         x="199.93327"
-         y="110.77706">R172,.13</text>
+         id="text10560-8-1-27"
+         x="198.90202"
+         y="110.77706">R16.25</text>
     </g>
-  </g>
-  <g
-     id="g4656-9-7"
-     transform="matrix(0.39009971,0,0,-0.39009971,0.7035777,250.90513)">
+    <text
+       transform="translate(61.975657,311.42196)"
+       sodipodi:linespacing="125%"
+       id="text7017"
+       y="-306.9538"
+       x="-53.801945"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:5.11000013px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         style="letter-spacing:-0.02px;fill:#333333;fill-opacity:1"
+         y="-306.9538"
+         x="-53.801945"
+         id="tspan7019"
+         sodipodi:role="line">N1: Johannesburg - Cape Town</tspan></text>
+    <text
+       transform="translate(61.975657,311.42196)"
+       sodipodi:linespacing="125%"
+       id="text7017-3"
+       y="2.2840786"
+       x="38.226173"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:5.11000013px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         style="font-size:3px;text-align:end;letter-spacing:-0.02px;text-anchor:end;fill:#333333;fill-opacity:1"
+         y="2.2840786"
+         x="38.206173"
+         id="tspan7019-8"
+         sodipodi:role="line">Tap the bubbles for more information</tspan></text>
     <g
-       id="g7416">
+       transform="translate(10.785892,-4.1550781e-5)"
+       id="g7431">
       <text
-         transform="matrix(1,0,0,-1,0,197.84497)"
+         transform="matrix(0.39009971,0,0,0.39009971,3.8443974,247.40153)"
          class="munic-label"
-         id="text10550-6-4"
-         x="208.47331"
+         id="text10550-5-6"
+         x="199.16765"
          y="93.510292"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1">
+         style="font-size:9px;fill:#1a1a1a;fill-opacity:1">
         <tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
-           id="tspan3685-2-6">Beaufort West</tspan>
+           style="font-size:9px;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
+           id="tspan3685-8-5">Drakenstein</tspan>
       </text>
       <text
-         transform="matrix(1,0,0,-1,0,202.97186)"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
-         id="text10560-8-1-2-7"
-         x="208.86003"
-         y="110.77706">R68.89</text>
+         transform="matrix(0.39009971,0,0,0.39009971,3.8443974,245.40153)"
+         style="font-size:9px;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
+         id="text10560-8-1-27-2"
+         x="198.90202"
+         y="110.77706">19.28</text>
     </g>
-  </g>
-  <g
-     id="g4656-9-7-1"
-     transform="matrix(0.39009971,0,0,-0.39009971,0.63671979,211.7879)">
     <g
-       id="g7411">
+       transform="translate(6.5175811,-4.1550781e-5)"
+       id="g7401">
       <text
-         transform="matrix(1,0,0,-1,0,197.95923)"
+         transform="matrix(0.39009971,0,0,0.39009971,0.26766615,68.044522)"
          class="munic-label"
-         id="text10550-6-4-7"
-         x="209.28191"
-         y="93.510292"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1">
-        <tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
-           id="tspan3685-2-6-8">Ubuntu</tspan>
-      </text>
-      <text
-         transform="matrix(1,0,0,-1,0,203.08612)"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
-         id="text10560-8-1-2-7-2"
-         x="208.86003"
-         y="110.77706">R235.08</text>
-    </g>
-  </g>
-  <g
-     id="g4656-9-7-1-9"
-     transform="matrix(0.39009971,0,0,-0.39009971,-3.2044671,181.7374)">
-    <g
-       id="g7406">
-      <text
-         transform="matrix(1,0,0,-1,0,197.95923)"
-         class="munic-label"
-         id="text10550-6-4-7-3"
+         id="text10550-6-4-7-3-0"
          x="219.09343"
          y="93.510292"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1">
         <tspan
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
-           id="tspan3685-2-6-8-2">Emthanjeni</tspan>
+           id="tspan3685-2-6-8-2-4">Mangaung</tspan>
       </text>
       <text
-         transform="matrix(1,0,0,-1,0,203.08612)"
+         transform="matrix(0.39009971,0,0,0.39009971,0.26766615,66.044522)"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
-         id="text10560-8-1-2-7-2-8"
+         id="text10560-8-1-2-7-2-8-9"
          x="218.65398"
-         y="110.77706">R38.41</text>
+         y="110.77706">R8.63</text>
     </g>
-  </g>
-  <g
-     id="g4656-9-7-1-9-2"
-     transform="matrix(0.39009971,0,0,-0.39009971,0.617291,81.582163)">
     <g
-       id="g7391">
+       transform="translate(12.242292,-4.1550781e-5)"
+       id="g7396">
       <text
-         transform="matrix(1,0,0,-1,0,197.95923)"
+         transform="matrix(0.39009971,0,0,0.39009971,-5.4467592,18.203765)"
          class="munic-label"
-         id="text10550-6-4-7-3-8"
-         x="209.27019"
+         id="text10550-6-4-7-3-0-7"
+         x="219.09343"
          y="93.510292"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1">
         <tspan
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
-           id="tspan3685-2-6-8-2-6">Johannesburg</tspan>
+           id="tspan3685-2-6-8-2-4-4">Emfuleni</tspan>
       </text>
       <text
-         transform="matrix(1,0,0,-1,0,203.08612)"
+         transform="matrix(0.39009971,0,0,0.39009971,-5.4467592,16.203765)"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
-         id="text10560-8-1-2-7-2-8-1"
-         x="208.86003"
-         y="110.77706">R3.57</text>
+         id="text10560-8-1-2-7-2-8-9-2"
+         x="218.65398"
+         y="110.77706">R17.71</text>
     </g>
-  </g>
-  <g
-     id="g4656-99"
-     transform="matrix(0.39009971,0,0,-0.39009971,4.6302894,337.10646)">
+    <circle
+       cy="0"
+       cx="0"
+       id="circle10600-9"
+       style="fill:#ff9f9f;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(0.39009971,0,0,-0.39009971,59.386562,316.91494)"
+       r="2" />
     <text
-       style="font-size:9px;fill:#1a1a1a;fill-opacity:1"
-       y="93.510292"
-       x="199.16765"
-       id="text10550-5"
-       class="munic-label"
-       transform="matrix(1,0,0,-1,0,197.73511)">
-      <tspan
-         id="tspan3685-8"
-         style="font-size:9px;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1">Cape Town</tspan>
-    </text>
-    <text
-       y="110.77706"
-       x="198.90202"
-       id="text10560-8-1-27"
-       style="font-size:9px;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
-       transform="matrix(1,0,0,-1,0,202.862)">R16.25</text>
-  </g>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:5.11000013px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none"
-     x="-53.801945"
-     y="-306.9538"
-     id="text7017"
-     sodipodi:linespacing="125%"
-     transform="translate(51.975657,311.42196)"><tspan
-       sodipodi:role="line"
-       id="tspan7019"
-       x="-53.801945"
-       y="-306.9538"
-       style="letter-spacing:-0.02px;fill:#333333;fill-opacity:1">N1: Johannesburg - Cape Town</tspan></text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:5.11000013px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none"
-     x="38.226173"
-     y="2.2840786"
-     id="text7017-3"
-     sodipodi:linespacing="125%"
-     transform="translate(51.975657,311.42196)"><tspan
-       sodipodi:role="line"
-       id="tspan7019-8"
-       x="38.206173"
+       transform="translate(61.893625,315.68701)"
+       sodipodi:linespacing="125%"
+       id="text7017-3-4"
        y="2.2840786"
-       style="font-size:3px;text-align:end;letter-spacing:-0.02px;text-anchor:end;fill:#333333;fill-opacity:1">Tap the bubbles for more information</tspan></text>
-  <g
-     id="g7431"
-     transform="translate(0.78589198,0)">
-    <text
-       style="font-size:9px;fill:#1a1a1a;fill-opacity:1"
-       y="93.510292"
-       x="199.16765"
-       id="text10550-5-6"
-       class="munic-label"
-       transform="matrix(0.39009971,0,0,0.39009971,3.8443974,247.40153)">
-      <tspan
-         id="tspan3685-8-5"
-         style="font-size:9px;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1">Drakenstein</tspan>
-    </text>
-    <text
-       y="110.77706"
-       x="198.90202"
-       id="text10560-8-1-27-2"
-       style="font-size:9px;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
-       transform="matrix(0.39009971,0,0,0.39009971,3.8443974,245.40153)">19.28</text>
-  </g>
-  <g
-     id="g7401"
-     transform="translate(-3.4824191,0)">
-    <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
-       y="93.510292"
-       x="219.09343"
-       id="text10550-6-4-7-3-0"
-       class="munic-label"
-       transform="matrix(0.39009971,0,0,0.39009971,0.26766615,68.044522)">
-      <tspan
-         id="tspan3685-2-6-8-2-4"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1">Mangaung</tspan>
-    </text>
-    <text
-       y="110.77706"
-       x="218.65398"
-       id="text10560-8-1-2-7-2-8-9"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
-       transform="matrix(0.39009971,0,0,0.39009971,0.26766615,66.044522)">R8.63</text>
-  </g>
-  <g
-     id="g7396"
-     transform="translate(2.2422921,0)">
-    <text
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
-       y="93.510292"
-       x="219.09343"
-       id="text10550-6-4-7-3-0-7"
-       class="munic-label"
-       transform="matrix(0.39009971,0,0,0.39009971,-5.4467592,18.203765)">
-      <tspan
-         id="tspan3685-2-6-8-2-4-4"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1">Emfuleni</tspan>
-    </text>
-    <text
-       y="110.77706"
-       x="218.65398"
-       id="text10560-8-1-2-7-2-8-9-2"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
-       transform="matrix(0.39009971,0,0,0.39009971,-5.4467592,16.203765)">R17.71</text>
+       x="38.226173"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:5.11000013px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         style="font-size:3px;text-align:end;letter-spacing:-0.02px;text-anchor:end;fill:#333333;fill-opacity:1"
+         y="2.2840786"
+         x="38.206173"
+         id="tspan7019-8-7"
+         sodipodi:role="line">Audit data not data available</tspan></text>
   </g>
 </svg>

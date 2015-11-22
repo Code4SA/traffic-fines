@@ -1,7 +1,7 @@
 var w = "100%", h = "100%";
 var nat_fines_per_capita = NaN;
 var nat_perc_budget = NaN;
-var r_max = 55, r_min = 2;
+var r_max = 55, r_min = 0.1
 
 var calc_fines_per_capita_month = function(datum) {
     return datum["Total Fines"] / datum["Population"] / 12;
@@ -71,8 +71,8 @@ var create_tooltip = function(data) {
 }
 
 var calc_radius = function(value) {
-    if (isNaN(parseInt(value)) || value == 0)
-        value = 1;
+    if (isNaN(parseInt(value)) || value < r_min)
+        value = r_min;
     var radius = Math.sqrt(value) * 8;
     if (radius > r_max)
         return r_max
@@ -92,6 +92,9 @@ var load_data = function(container, svgfile, datafile, onload) {
             if (value < 3) return ""
             return value + "x"
         });
+        if (isNaN(parseInt(value))) {
+            d3.select(element).classed("no_data", true);
+        }
         container.selectAll(".buttons button")
             .classed("btn-primary", false)
             .classed("btn-default", true);

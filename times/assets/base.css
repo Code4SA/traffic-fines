@@ -41,3 +41,7 @@
     border-radius: 5px;
 }
 
+.bubble.no_data circle {
+    fill: #ff9f9f !important;
+}
+
