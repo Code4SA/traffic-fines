@@ -1,8 +1,10 @@
+#n1 {
+}
 
 .d3-tooltip {            
   text-align: center;           
   padding: 5px;             
-  font: 12px sans-serif;        
+  font: 0.75em sans-serif;        
   background: #FFE770;
   border: solid 1px #333333;
   border-radius: 4px;                
@@ -15,7 +17,7 @@
 }
 
 .d3-tooltip h3 {
-    font-size: 14px;    
+    font-size: 1.1em;    
     font-weight: bold;
 }
 
