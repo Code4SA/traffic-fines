@@ -18,4 +18,4 @@ LIBRARY_FILES = \
     main.js \
 
 lib.js: $(LIBRARY_FILES) Makefile
-	node_modules/.bin/smash $(LIBRARY_FILES) | node_modules/.bin/uglifyjs - -c -m -o $@
+	/usr/local/bin/smash $(LIBRARY_FILES) | /usr/local/bin/uglifyjs - -c -m -o $@
