@@ -5,9 +5,11 @@ if (document.location.hostname == "localhost") {
 }
 
 document.write('<script type="text/javascript" src="' + baseurl + 'assets/pym.js"></script>')
-document.write(
-    '<script> \
-        var pymParent1 = new pym.Parent("n1", baseurl + "n1.html", {}); \
-        var pymParent2 = new pym.Parent("n2", baseurl + "n2.html", {}); \
-        var pymParent3 = new pym.Parent("n3", baseurl + "n3.html", {}); \
-    </script>');
+
+elements = ["n1", "n2", "n3"];
+for (idx in elements) {
+    var el = elements[idx];
+    if (document.getElementById(el))
+        document.write('<script>\
+            var pymParent = new pym.Parent("' + el + '", baseurl + "' + el + '.html", {});</script>')
+}
