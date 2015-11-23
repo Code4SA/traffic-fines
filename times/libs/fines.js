@@ -6,7 +6,7 @@ if (document.location.hostname == "localhost") {
 
 document.write('<script type="text/javascript" src="' + baseurl + 'assets/pym.js"></script>')
 
-elements = ["n1", "n2", "n3"];
+elements = ["n1", "n2", "n3", "n2h"];
 for (idx in elements) {
     var el = elements[idx];
     if (document.getElementById(el))

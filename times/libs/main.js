@@ -148,7 +148,6 @@ var load_data = function(container, svgfile, datafile, onload) {
             d3.selectAll("g.windows").on("click", function() {tooltip.hide();});
             d3.select(".d3-tooltip").on("click", function() {tooltip.hide();});
             d3.selectAll("g.bubble")
-                .style("cursor", "pointer")
                 .each(function() {
                     var me = d3.select(this);
                     var code = me.attr("data-munic");
@@ -162,7 +161,6 @@ var load_data = function(container, svgfile, datafile, onload) {
                     tooltip.show();
                     if (onload) onload();
                 })
-                .style("stroke-width", "10px")
                 .each(function(el) {
                     transition_radius(this, el["nat_per_capita"]);
                 });

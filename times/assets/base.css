@@ -47,3 +47,6 @@
     fill: #ff9f9f !important;
 }
 
+g.bubble {
+    cursor: pointer;
+}
