@@ -4,7 +4,7 @@ var nat_perc_budget = NaN;
 var r_max = 55, r_min = 0.1
 
 var calc_fines_per_capita_month = function(datum) {
-    return datum["Total Fines"] / datum["Population"] / 12;
+    return datum["Total Fines"] / datum["Population"];
 }
 
 var calc_perc_fines = function(datum) {
