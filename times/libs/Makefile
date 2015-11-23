@@ -1,4 +1,5 @@
 LIBRARY_FILES = \
+    misc.js \
     queue.v1.min.js \
     template.js \
     d3/src/start.js \
@@ -19,3 +20,6 @@ LIBRARY_FILES = \
 
 lib.js: $(LIBRARY_FILES) Makefile
 	/usr/local/bin/smash $(LIBRARY_FILES) | /usr/local/bin/uglifyjs - -c -m -o $@
+
+no_uglify: $(LIBRARY_FILES) Makefile
+	/usr/local/bin/smash $(LIBRARY_FILES) > lib.js
