@@ -3,43 +3,49 @@
 var ttCounter = 0
 
 function D3Tooltip (d3) {
-  this.d3 = d3
-  this.id = 'd3-tooltip-' + ttCounter
-  this.class = 'd3-tooltip'
-  this.$el =  d3.select('body').append('div')
-                .attr('class', this.class)
-                .attr('id', this.id)
-                .style('opacity', 0)
-                .style('position', 'absolute')
-                .style('pointer-events', 'none')
+    this.d3 = d3
+    this.id = 'd3-tooltip-' + ttCounter
+    this.class = 'd3-tooltip'
+    this.$el =    d3.select('body').append('div')
+                                .attr('class', this.class)
+                                .attr('id', this.id)
+                                .style('opacity', 0)
+                                .style('position', 'absolute')
+                                .style('pointer-events', 'none')
 
-  this.visible = false;
-  ttCounter += 1
+    this.visible = false;
+    ttCounter += 1
 }
 
 D3Tooltip.prototype.html = function(html) {
-  this.$el.html(html)
+    this.$el.html(html)
 }
 
 D3Tooltip.prototype.show = function() {
-  this.$el.transition().duration(200).style('opacity', .9)
-  //this.$el.style('left', this.d3.event.pageX + 'px')
-  //        .style('top', (this.d3.event.pageY - 28) + 'px')
+    this.$el.transition().duration(200).style('opacity', .9)
+        
+    var screen_width = this.d3.event.screenX;
+    var page_x = this.d3.event.pageX;
     
-  this.visible = true;
-  this.$el.style('left',  '0px')
-          .style('top', (this.d3.event.pageY + 18) + 'px')
+    if (page_x < screen_width / 2) {
+        this.$el.style('left', this.d3.event.pageX + 'px')
+    } else {
+        var rect = this.$el[0][0].getBoundingClientRect()
+        this.$el.style('left', (this.d3.event.pageX - rect.width) + 'px')
+    }
+    this.$el.style('top', (this.d3.event.pageY - 28) + 'px')
+    this.visible = true;
 
 }
 
 D3Tooltip.prototype.hide = function() {
-  this.$el.transition().duration(500).style('opacity', 0)
-  this.visible = false;
+    this.$el.transition().duration(500).style('opacity', 0)
+    this.visible = false;
 }
 
 D3Tooltip.prototype.toggle = function() {
-    if (this.visible)
-        this.hide();
-    else
-        this.show();
+        if (this.visible)
+                this.hide();
+        else
+                this.show();
 }
