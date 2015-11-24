@@ -1,4 +1,3 @@
-var w = "100%", h = "100%";
 var nat_fines_per_capita = NaN;
 var nat_perc_budget = NaN;
 var r_max = 55, r_min = 0.1
@@ -80,8 +79,6 @@ var calc_radius = function(value) {
         return r_min
     return radius
 }
-
-var load_data = function(container, svgfile, datafile, onload) {
     var transition_radius = function(element, value) {
         var radius = calc_radius(value);
         var code = d3.select(element).attr("data-munic");
@@ -95,75 +92,88 @@ var load_data = function(container, svgfile, datafile, onload) {
         if (isNaN(parseInt(value))) {
             d3.select(element).classed("no_data", true);
         }
-        container.selectAll(".buttons button")
-            .classed("btn-primary", false)
-            .classed("btn-default", true);
     }
 
-    var enable_buttons = false;
-    if (enable_buttons) {
-        var make_button = function(text) {
-            var button = button_container.append("button")
-                .classed("btn", true)
-                .text(text)
+var FinesViz = function(ctx) {
+    this.ctx = ctx || {};
+    this.buttons_enabled = this.ctx.buttons_enabled || false;
+    this.per_capita = this.ctx.per_capita || "Per Capita";
+    this.perc_budget = this.ctx.perc_budget || "Percentage Budget";
+}
+
+FinesViz.prototype = {
+    enable_buttons: function(parent_container) {
+        var enable_button = function(button) {
+            button.classed("btn-primary", false).classed("btn-default", true);
+        }
+        var disable_button = function(button) {
+            button.classed("btn-primary", true).classed("btn-default", false);
+        }
+        var make_button = function(container, text, transition_value) {
+            var button = container.append("button")
                 .attr("type", "button")
+                .text(text)
+                .classed("btn", true)
+                .on("click", function(button_el) {
+                    parent_container.selectAll("g.bubble").each(function(bubble) {
+                        transition_radius(this, bubble[transition_value]);
+                    });
+                    container.selectAll(".buttons button")
+                        .each(function(el) {
+                            disable_button(d3.select(this));
+                        })
+                    enable_button(d3.select(this));
+                })
+                .classed("btn-primary", true)
             return button;
         }
 
-        var button_container = container.append("div").classed("buttons", true);
+        var button_container = parent_container.append("div").classed("buttons", true);
 
-        make_button("Per Capita")
-            .on("click", function(el) {
-                container.selectAll("g.bubble").each(function(el) {
-                    transition_radius(this, el["nat_per_capita"]);
-                });
-                d3.select(this).classed("btn-primary", true);
-            })
-            .classed("btn-primary", true)
+        btn_per_capita = make_button(button_container, this.per_capita, "nat_per_capita")
+        btn_perc_budget = make_button(button_container, this.perc_budget, "nat_perc_budget")
+        btn_per_capita.classed("btn-primary", false).classed("btn-default", true);
+    },
+    load_data : function(container, svgfile, datafile, onload) {
 
-        make_button("Percentage Budget")
-            .on("click", function(el) {
-                container.selectAll("g.bubble").each(function(el) {
-                    transition_radius(this, el["nat_perc_budget"]);
-                });
-                d3.select(this).classed("btn-primary", true);
-            })
-            .classed("btn-default", true)
+        if (this.buttons_enabled) {
+            this.enable_buttons(container);
+        }
+
+        var svg_element = container[0][0];
+
+        queue()
+            .defer(d3.xml, svgfile)
+            .defer(d3.csv, datafile)
+            .await(function(error, xml, csv) {
+                var importedNode = document.importNode(xml.documentElement, true);
+                var img = svg_element.appendChild(importedNode.cloneNode(true));
+                var data = csv2dict(csv);
+                var national = data["Summary"]
+                nat_fines_per_capita = calc_fines_per_capita_month(national);
+                nat_perc_budget = calc_perc_fines(national);
+
+                var tooltip = new D3Tooltip(d3);
+                d3.selectAll("g.windows").on("click", function() {tooltip.hide();});
+                d3.select(".d3-tooltip").on("click", function() {tooltip.hide();});
+                d3.selectAll("g.bubble")
+                    .each(function() {
+                        var me = d3.select(this);
+                        var code = me.attr("data-munic");
+                        var datum = data[code];
+                        me[0][0].__data__ = datum;
+
+                        process_datum(datum);
+                    })
+                    .on("click", function(el) {
+                        tooltip.html(create_tooltip(el));
+                        tooltip.show();
+                        if (onload) onload();
+                    })
+                    .each(function(el) {
+                        transition_radius(this, el["nat_per_capita"]);
+                    });
+                if (onload) onload();
+        })
     }
-
-    var svg_element = container[0][0];
-
-    queue()
-        .defer(d3.xml, svgfile)
-        .defer(d3.csv, datafile)
-        .await(function(error, xml, csv) {
-            var importedNode = document.importNode(xml.documentElement, true);
-            var img = svg_element.appendChild(importedNode.cloneNode(true));
-            var data = csv2dict(csv);
-            var national = data["Summary"]
-            nat_fines_per_capita = calc_fines_per_capita_month(national);
-            nat_perc_budget = calc_perc_fines(national);
-
-            var tooltip = new D3Tooltip(d3);
-            d3.selectAll("g.windows").on("click", function() {tooltip.hide();});
-            d3.select(".d3-tooltip").on("click", function() {tooltip.hide();});
-            d3.selectAll("g.bubble")
-                .each(function() {
-                    var me = d3.select(this);
-                    var code = me.attr("data-munic");
-                    var datum = data[code];
-                    me[0][0].__data__ = datum;
-
-                    process_datum(datum);
-                })
-                .on("click", function(el) {
-                    tooltip.html(create_tooltip(el));
-                    tooltip.show();
-                    if (onload) onload();
-                })
-                .each(function(el) {
-                    transition_radius(this, el["nat_per_capita"]);
-                });
-            if (onload) onload();
-    })
 }
