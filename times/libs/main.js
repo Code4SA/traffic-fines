@@ -2,40 +2,6 @@ var nat_fines_per_capita = NaN;
 var nat_perc_budget = NaN;
 var r_max = 55, r_min = 0.1
 
-var calc_fines_per_capita_month = function(datum) {
-    return datum["Total Fines"] / datum["Population"];
-}
-
-var calc_perc_fines = function(datum) {
-    return datum["Total Fines"] / datum["Total Budget"];
-}
-
-var process_datum = function(datum) {
-    perc_fines = calc_perc_fines(datum);
-    fines_per_capita = calc_fines_per_capita_month(datum);
-
-    datum["population"] = datum["Population"];
-    datum["total_fines"] = datum["Total Fines"];
-    datum["total_budget"] = datum["Total Budget"];
-    datum["perc_fines"] = perc_fines;
-    datum["fines_per_capita"] = fines_per_capita;
-    datum["nat_per_capita"] = fines_per_capita / nat_fines_per_capita;
-    datum["nat_perc_budget"] = perc_fines / nat_perc_budget;
-}
-
-var csv2dict = function(arr) {
-    data = {};
-    for (var idx in arr) {
-        var row = arr[idx];
-        var mcode = row["Municipality"]
-        data[mcode] = row;
-        row["Total Fines"] = +row["Total Fines"];
-        row["Total Budget"] = +row["Total Budget"];
-        row["Population"] = +row["Population"];
-    }
-    return data;
-}
-
 var create_tooltip = function(data) {
     var fmtr = function(x) {
         if (isNaN(x))
@@ -69,17 +35,25 @@ var create_tooltip = function(data) {
     return tmpl("tt_template", data);
 }
 
-var calc_radius = function(value) {
-    if (isNaN(parseInt(value)) || value < r_min)
-        value = r_min;
-    var radius = Math.sqrt(value) * 8;
-    if (radius > r_max)
-        return r_max
-    else if (radius < r_min)
-        return r_min
-    return radius
-}
-    var transition_radius = function(element, value) {
+BubbleFuncs = {
+    calc_fines_per_capita_month : function(datum) {
+        return datum["Total Fines"] / datum["Population"];
+    },
+    calc_perc_fines : function(datum) {
+        return datum["Total Fines"] / datum["Total Budget"];
+    },
+    transition_radius : function(element, value) {
+        var calc_radius = function(value) {
+            if (isNaN(parseInt(value)) || value < r_min)
+                value = r_min;
+            var radius = Math.sqrt(value) * 8;
+            if (radius > r_max)
+                return r_max
+            else if (radius < r_min)
+                return r_min
+            return radius
+        }
+
         var radius = calc_radius(value);
         var code = d3.select(element).attr("data-munic");
 
@@ -92,17 +66,31 @@ var calc_radius = function(value) {
         if (isNaN(parseInt(value))) {
             d3.select(element).classed("no_data", true);
         }
-    }
+    },
+    process_datum : function(datum) {
+        perc_fines = BubbleFuncs.calc_perc_fines(datum);
+        fines_per_capita = BubbleFuncs.calc_fines_per_capita_month(datum);
+
+        datum["population"] = datum["Population"];
+        datum["total_fines"] = datum["Total Fines"];
+        datum["total_budget"] = datum["Total Budget"];
+        datum["perc_fines"] = perc_fines;
+        datum["fines_per_capita"] = fines_per_capita;
+        datum["nat_per_capita"] = fines_per_capita / nat_fines_per_capita;
+        datum["nat_perc_budget"] = perc_fines / nat_perc_budget;
+    },
+}
 
 var FinesViz = function(ctx) {
     this.ctx = ctx || {};
     this.buttons_enabled = this.ctx.buttons_enabled || false;
     this.per_capita = this.ctx.per_capita || "Per Capita";
     this.perc_budget = this.ctx.perc_budget || "Percentage Budget";
+    this.onload = this.ctx.onload || function() {};
 }
 
 FinesViz.prototype = {
-    enable_buttons: function(parent_container) {
+    _enable_buttons: function(parent_container) {
         var enable_button = function(button) {
             button.classed("btn-primary", false).classed("btn-default", true);
         }
@@ -116,7 +104,7 @@ FinesViz.prototype = {
                 .classed("btn", true)
                 .on("click", function(button_el) {
                     parent_container.selectAll("g.bubble").each(function(bubble) {
-                        transition_radius(this, bubble[transition_value]);
+                        BubbleFuncs.transition_radius(this, bubble[transition_value]);
                     });
                     container.selectAll(".buttons button")
                         .each(function(el) {
@@ -134,10 +122,23 @@ FinesViz.prototype = {
         btn_perc_budget = make_button(button_container, this.perc_budget, "nat_perc_budget")
         enable_button(btn_per_capita);
     },
-    load_data : function(container, svgfile, datafile, onload) {
+    _csv2dict : function(arr) {
+        data = {};
+        for (var idx in arr) {
+            var row = arr[idx];
+            var mcode = row["Municipality"]
+            data[mcode] = row;
+            row["Total Fines"] = +row["Total Fines"];
+            row["Total Budget"] = +row["Total Budget"];
+            row["Population"] = +row["Population"];
+        }
+        return data;
+    },
+    load_data : function(container, svgfile, datafile) {
 
+        var viz = this;
         if (this.buttons_enabled) {
-            this.enable_buttons(container);
+            this._enable_buttons(container);
         }
 
         var svg_element = container[0][0];
@@ -148,32 +149,32 @@ FinesViz.prototype = {
             .await(function(error, xml, csv) {
                 var importedNode = document.importNode(xml.documentElement, true);
                 var img = svg_element.appendChild(importedNode.cloneNode(true));
-                var data = csv2dict(csv);
+                var data = viz._csv2dict(csv);
                 var national = data["Summary"]
-                nat_fines_per_capita = calc_fines_per_capita_month(national);
-                nat_perc_budget = calc_perc_fines(national);
+                nat_fines_per_capita = BubbleFuncs.calc_fines_per_capita_month(national);
+                nat_perc_budget = BubbleFuncs.calc_perc_fines(national);
 
                 var tooltip = new D3Tooltip(d3);
                 d3.selectAll("g.windows").on("click", function() {tooltip.hide();});
                 d3.select(".d3-tooltip").on("click", function() {tooltip.hide();});
-                d3.selectAll("g.bubble")
+                container.selectAll("g.bubble")
                     .each(function() {
                         var me = d3.select(this);
                         var code = me.attr("data-munic");
                         var datum = data[code];
                         me[0][0].__data__ = datum;
 
-                        process_datum(datum);
+                        BubbleFuncs.process_datum(datum);
                     })
                     .on("click", function(el) {
                         tooltip.html(create_tooltip(el));
                         tooltip.show();
-                        if (onload) onload();
+                        viz.onload();
                     })
                     .each(function(el) {
-                        transition_radius(this, el["nat_per_capita"]);
+                        BubbleFuncs.transition_radius(this, el["nat_per_capita"]);
                     });
-                if (onload) onload();
+                viz.onload();
         })
     }
 }

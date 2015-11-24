@@ -30,10 +30,13 @@
     var route = getQueryVariable("route")
     if (route) {
         var pymChild = new pym.Child();
-        var viz = new FinesViz({buttons_enabled : true});
-        viz.load_data(d3.select("#route.roadmap"), "assets/" + route + ".svg", "assets/data.csv", function() {
-            pymChild.sendHeight();
+        var viz = new FinesViz({
+            buttons_enabled : true,
+            onload : function() {
+                pymChild.sendHeight();
+            }
         });
+        viz.load_data(d3.select("#route.roadmap"), "assets/" + route + ".svg", "assets/data.csv");
     }
     </script>
 
