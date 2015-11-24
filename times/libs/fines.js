@@ -11,6 +11,6 @@ document.write("<script>");
 for (idx in elements) {
     var el = elements[idx];
     if (document.getElementById(el))
-        document.write('var pymParent = new pym.Parent("' + el + '", ' + baseurl + '"route.html?route=' + el + '", {});')
+        document.write('var pymParent = new pym.Parent("' + el + '", "' + baseurl + '"route.html?route=' + el + '", {});')
 }
 document.write("</script>");
