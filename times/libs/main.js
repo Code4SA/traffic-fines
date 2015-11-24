@@ -132,7 +132,7 @@ FinesViz.prototype = {
 
         btn_per_capita = make_button(button_container, this.per_capita, "nat_per_capita")
         btn_perc_budget = make_button(button_container, this.perc_budget, "nat_perc_budget")
-        btn_per_capita.classed("btn-primary", false).classed("btn-default", true);
+        enable_button(btn_per_capita);
     },
     load_data : function(container, svgfile, datafile, onload) {
 
