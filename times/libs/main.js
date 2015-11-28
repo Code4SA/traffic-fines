@@ -1,7 +1,3 @@
-var nat_fines_per_capita = NaN;
-var nat_perc_budget = NaN;
-var r_max = 55, r_min = 0.1
-
 var create_tooltip = function(data) {
     var fmtr = function(x) {
         if (isNaN(x))
@@ -35,7 +31,16 @@ var create_tooltip = function(data) {
     return tmpl("tt_template", data);
 }
 
-BubbleFuncs = {
+var BubbleFuncs = function(national, ctx) {
+    this.national = national;
+    this.ctx = ctx || {};
+    this.r_max = this.ctx.r_max || 55;
+    this.r_min = this.ctx.r_min || 0.1;
+    this.nat_fines_per_capita = this.calc_fines_per_capita_month(national);
+    this.nat_perc_budget = this.calc_perc_fines(this.national);
+}
+
+BubbleFuncs.prototype = {
     calc_fines_per_capita_month : function(datum) {
         return datum["Total Fines"] / datum["Population"];
     },
@@ -43,14 +48,16 @@ BubbleFuncs = {
         return datum["Total Fines"] / datum["Total Budget"];
     },
     transition_radius : function(element, value) {
+        var me = this;
         var calc_radius = function(value) {
-            if (isNaN(parseInt(value)) || value < r_min)
-                value = r_min;
+            if (isNaN(parseInt(value)) || value < me.r_min)
+                value = me.r_min;
+
             var radius = Math.sqrt(value) * 8;
-            if (radius > r_max)
-                return r_max
-            else if (radius < r_min)
-                return r_min
+            if (radius > me.r_max)
+                return me.r_max
+            else if (radius < me.r_min)
+                return me.r_min
             return radius
         }
 
@@ -68,16 +75,16 @@ BubbleFuncs = {
         }
     },
     process_datum : function(datum) {
-        perc_fines = BubbleFuncs.calc_perc_fines(datum);
-        fines_per_capita = BubbleFuncs.calc_fines_per_capita_month(datum);
+        perc_fines = this.calc_perc_fines(datum);
+        fines_per_capita = this.calc_fines_per_capita_month(datum);
 
         datum["population"] = datum["Population"];
         datum["total_fines"] = datum["Total Fines"];
         datum["total_budget"] = datum["Total Budget"];
         datum["perc_fines"] = perc_fines;
         datum["fines_per_capita"] = fines_per_capita;
-        datum["nat_per_capita"] = fines_per_capita / nat_fines_per_capita;
-        datum["nat_perc_budget"] = perc_fines / nat_perc_budget;
+        datum["nat_per_capita"] = fines_per_capita / this.nat_fines_per_capita;
+        datum["nat_perc_budget"] = perc_fines / this.nat_perc_budget;
     },
 }
 
@@ -98,13 +105,14 @@ FinesViz.prototype = {
             button.classed("btn-primary", true).classed("btn-default", false);
         }
         var make_button = function(container, text, transition_value) {
+            var me = this;
             var button = container.append("button")
                 .attr("type", "button")
                 .text(text)
                 .classed("btn", true)
                 .on("click", function(button_el) {
                     parent_container.selectAll("g.bubble").each(function(bubble) {
-                        BubbleFuncs.transition_radius(this, bubble[transition_value]);
+                        me.bubble_funcs.transition_radius(this, bubble[transition_value]);
                     });
                     container.selectAll(".buttons button")
                         .each(function(el) {
@@ -151,8 +159,8 @@ FinesViz.prototype = {
                 var img = svg_element.appendChild(importedNode.cloneNode(true));
                 var data = viz._csv2dict(csv);
                 var national = data["Summary"]
-                nat_fines_per_capita = BubbleFuncs.calc_fines_per_capita_month(national);
-                nat_perc_budget = BubbleFuncs.calc_perc_fines(national);
+                this.bubble_funcs = new BubbleFuncs(national);
+
 
                 var tooltip = new D3Tooltip(d3);
                 d3.selectAll("g.windows").on("click", function() {tooltip.hide();});
@@ -164,7 +172,7 @@ FinesViz.prototype = {
                         var datum = data[code];
                         me[0][0].__data__ = datum;
 
-                        BubbleFuncs.process_datum(datum);
+                        bubble_funcs.process_datum(datum);
                     })
                     .on("click", function(el) {
                         tooltip.html(create_tooltip(el));
@@ -172,7 +180,7 @@ FinesViz.prototype = {
                         viz.onload();
                     })
                     .each(function(el) {
-                        BubbleFuncs.transition_radius(this, el["nat_per_capita"]);
+                        bubble_funcs.transition_radius(this, el["nat_per_capita"]);
                     });
                 viz.onload();
         })
