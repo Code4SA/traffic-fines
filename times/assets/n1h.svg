@@ -8,7 +8,7 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   viewBox="0 0 279 124"
+   viewBox="0 0 279 125"
    width="100%"
    class="roadmap"
    id="svg10508"
@@ -100,9 +100,9 @@
      fit-margin-left="0.1"
      fit-margin-right="0.1"
      fit-margin-bottom="0.1"
-     inkscape:zoom="2.4272277"
-     inkscape:cx="112.39815"
-     inkscape:cy="51.358697"
+     inkscape:zoom="3.4326184"
+     inkscape:cx="22.017394"
+     inkscape:cy="37.676997"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -126,10 +126,8 @@
        width="245.427"
        y="-0.0046777781"
        height="290.83908"
-       rx="10.426825"
-       ry="9.9992609"
        data-province="WC"
-       style="opacity:0.4;fill:#435678;stroke:#000000;stroke-width:0.45686972;stroke-miterlimit:4;stroke-dasharray:none"
+       style="opacity:0.4;fill:#435678;stroke:none;stroke-width:0.45686972;stroke-miterlimit:4;stroke-dasharray:none"
        id="rect10514"
        transform="translate(19.642427,0)" />
     <text
@@ -148,10 +146,8 @@
        width="245.44611"
        y="290.8251"
        height="198.10638"
-       rx="10.427644"
-       ry="9.9989138"
        data-province="NC"
-       style="opacity:0.4;fill:#862346;stroke:#000000;stroke-width:0.45688757;stroke-miterlimit:4;stroke-dasharray:none"
+       style="opacity:0.4;fill:#862346;stroke:none;stroke-width:0.45688757;stroke-miterlimit:4;stroke-dasharray:none"
        id="rect10520" />
     <text
        transform="matrix(0,-1,-1,0,42.515542,-1.6678847e-6)"
@@ -169,10 +165,8 @@
        width="255.33443"
        y="488.9321"
        height="146.9227"
-       rx="11.366901"
-       ry="9.9976149"
        data-province="FS"
-       style="opacity:0.4;fill:#125743;stroke:#000000;stroke-width:0.47703099;stroke-miterlimit:4;stroke-dasharray:none"
+       style="opacity:0.4;fill:#125743;stroke:none;stroke-width:0.47703099;stroke-miterlimit:4;stroke-dasharray:none"
        id="rect10526" />
     <text
        style="text-anchor:middle"
@@ -190,10 +184,8 @@
        width="245.44606"
        y="635.85553"
        height="71.841522"
-       rx="9.5374699"
-       ry="9.2915421"
        data-province="GT"
-       style="opacity:0.4;fill:#642376;stroke:#000000;stroke-width:0.42125151;stroke-miterlimit:4;stroke-dasharray:none"
+       style="opacity:0.4;fill:#642376;stroke:none;stroke-width:0.42125151;stroke-miterlimit:4;stroke-dasharray:none"
        id="rect10532"
        transform="matrix(1.0000638,0,0,1.0758393,-0.00812544,-48.214716)" />
     <text
