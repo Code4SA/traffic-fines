@@ -8,14 +8,14 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   viewBox="0 0 100 401"
-   width="100%"
+   viewBox="-10000 0 0 400"
+   width="100.30022"
    class="roadmap"
    id="svg10928"
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="n2.svg"
-   height="100%">
+   height="401.61874">
   <metadata
      id="metadata11098">
     <rdf:RDF>
@@ -47,9 +47,9 @@
      fit-margin-left="0.1"
      fit-margin-right="0.1"
      fit-margin-bottom="0.1"
-     inkscape:zoom="1.3676491"
-     inkscape:cx="50.150109"
-     inkscape:cy="113.06757"
+     inkscape:zoom="15.473183"
+     inkscape:cx="19.977461"
+     inkscape:cy="13.874955"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -1429,4 +1429,17 @@
        y="51.108311"
        style="font-weight:bold;font-size:7.04947996px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;letter-spacing:0.9120332px;text-anchor:end;fill:#1a1a1a"
        id="tspan4865">National Average</tspan></text>
+  <text
+     transform="translate(16.469189,398.62354)"
+     sodipodi:linespacing="125%"
+     id="text7017-3-4-1-8"
+     y="2.2840786"
+     x="38.226173"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:5.11000013px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none"
+     xml:space="preserve"><tspan
+       style="font-size:2.5px;text-align:end;letter-spacing:-0.02px;text-anchor:end;fill:#333333;fill-opacity:1"
+       y="2.2840786"
+       x="38.206173"
+       id="tspan7019-8-7-6-7"
+       sodipodi:role="line">Note: Figures represent fines issued not collected</tspan></text>
 </svg>

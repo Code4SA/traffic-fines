@@ -84,9 +84,9 @@
      fit-margin-left="0.1"
      fit-margin-right="0.1"
      fit-margin-bottom="0.1"
-     inkscape:zoom="14.229205"
-     inkscape:cx="48.292162"
-     inkscape:cy="136.76387"
+     inkscape:zoom="10.061567"
+     inkscape:cx="4.2135944"
+     inkscape:cy="2.0835939"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -599,23 +599,29 @@
        id="g4656-9-7-1">
       <g
          id="g7411">
-        <text
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
-           y="93.510292"
-           x="209.28191"
-           id="text10550-6-4-7"
-           class="munic-label"
-           transform="matrix(1,0,0,-1,8.4598155,197.95923)">
-          <tspan
-             id="tspan3685-2-6-8"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1">Ubuntu</tspan>
-        </text>
-        <text
-           y="110.77706"
-           x="208.86003"
-           id="text10560-8-1-2-7-2"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.21508121px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
-           transform="matrix(1,0,0,-1,8.4598155,203.08612)">R2,821.01</text>
+        <g
+           id="g6619">
+          <g
+             id="g6624">
+            <text
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
+               y="93.510292"
+               x="209.28191"
+               id="text10550-6-4-7"
+               class="munic-label"
+               transform="matrix(1,0,0,-1,8.4598155,197.95923)">
+              <tspan
+                 id="tspan3685-2-6-8"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1">Ubuntu</tspan>
+            </text>
+            <text
+               y="110.77706"
+               x="208.86003"
+               id="text10560-8-1-2-7-2"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.21508121px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end;fill:#1a1a1a;fill-opacity:1"
+               transform="matrix(1,0,0,-1,8.4598155,203.08612)">R2,821.01</text>
+          </g>
+        </g>
       </g>
     </g>
     <g
@@ -1574,4 +1580,17 @@
        inkscape:connector-curvature="0"
        style="fill:#333333;fill-opacity:1" />
   </g>
+  <text
+     transform="translate(17.393746,317.0728)"
+     sodipodi:linespacing="125%"
+     id="text7017-3-4-1-8"
+     y="2.2840786"
+     x="38.226173"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:5.11000013px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none"
+     xml:space="preserve"><tspan
+       style="font-size:2.5px;text-align:end;letter-spacing:-0.02px;text-anchor:end;fill:#333333;fill-opacity:1"
+       y="2.2840786"
+       x="38.206173"
+       id="tspan7019-8-7-6-7"
+       sodipodi:role="line">Note: Figures represent fines issued not collected</tspan></text>
 </svg>
