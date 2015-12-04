@@ -27,16 +27,16 @@
 
 
     <script>
-    var route = getQueryVariable("route")
+    var route = trafficfines.getQueryVariable("route")
     if (route) {
         var pymChild = new pym.Child();
-        var viz = new FinesViz({
+        var load_data = trafficfines.FinesViz({
             buttons_enabled : true,
             onload : function() {
                 pymChild.sendHeight();
             }
         });
-        viz.load_data(d3.select("#route.roadmap"), "assets/" + route + ".svg", "assets/data.csv");
+        load_data(d3.select("#route.roadmap"), "assets/" + route + ".svg", "assets/data.csv");
     }
     </script>
 
