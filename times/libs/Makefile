@@ -16,6 +16,7 @@ LIBRARY_FILES = \
     d3/src/event/event.js \
     d3/src/end.js \
     d3-tooltip.js \
+    bubble_funcs.js \
     main.js \
 
 lib.js: $(LIBRARY_FILES) Makefile
