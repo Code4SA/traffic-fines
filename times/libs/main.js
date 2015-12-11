@@ -72,6 +72,7 @@ var trafficfines = trafficfines || {}
             btn_per_capita = make_button(button_container, per_capita, "nat_per_capita")
             btn_perc_budget = make_button(button_container, perc_budget, "nat_perc_budget")
             enable_button(btn_per_capita);
+            disable_button(btn_perc_budget);
         }
 
         var csv2dict = function(arr) {
