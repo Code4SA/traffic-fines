@@ -36,8 +36,8 @@ var trafficfines = trafficfines || {}
     trafficfines.FinesViz = function(ctx) {
         var ctx = ctx || {};
         var buttons_enabled = ctx.buttons_enabled || false;
-        var per_capita = per_capita || "Per Capita";
-        var perc_budget = ctx.perc_budget || "Percentage Budget";
+        var per_capita = per_capita || "Per capita";
+        var perc_budget = ctx.perc_budget || "Percentage budget";
         var onload = ctx.onload || function() {};
         var bubble_funcs = undefined;
 
