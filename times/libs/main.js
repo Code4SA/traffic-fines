@@ -42,10 +42,10 @@ var trafficfines = trafficfines || {}
         var bubble_funcs = undefined;
 
         var enable_buttons = function(parent_container) {
-            var enable_button = function(button) {
+            var disable_button = function(button) {
                 button.classed("btn-primary", false).classed("btn-default", true);
             }
-            var disable_button = function(button) {
+            var enable_button = function(button) {
                 button.classed("btn-primary", true).classed("btn-default", false);
             }
             var make_button = function(container, text, transition_value) {
