@@ -1,4 +1,4 @@
-//based upon: http://www.d3noob.org/2013/01/adding-tooltips-to-d3js-graph.html
+//based on: http://www.d3noob.org/2013/01/adding-tooltips-to-d3js-graph.html
 
 var trafficfines = trafficfines || {}
 !function() {
@@ -20,6 +20,7 @@ var trafficfines = trafficfines || {}
         this.fadeout_delay = this.ctx.fadeout_delay || 500;
         this.fadein_delay = this.ctx.fadein_delay || 200;
         this.opacity = this.ctx.opacity || 0.9;
+        this.left_margin = this.ctx.left_margin || 5;
 
         this.visible = false;
         ttCounter += 1
@@ -30,14 +31,16 @@ var trafficfines = trafficfines || {}
     }
 
     D3Tooltip.prototype.show = function() {
-        var screen_width = this.d3.event.screenX;
+        var screen_width = window.innerWidth;
         var page_x = this.d3.event.pageX;
         
         if (page_x < screen_width / 2) {
             this.$el.style('left', this.d3.event.pageX + 'px')
         } else {
             var rect = this.$el[0][0].getBoundingClientRect()
-            this.$el.style('left', (this.d3.event.pageX - rect.width) + 'px')
+            var x = this.d3.event.pageX - rect.width
+            if (x < 0) x = this.left_margin;
+            this.$el.style('left', x + 'px')
         }
         this.$el.style('top', (this.d3.event.pageY - this.y_offset) + 'px')
         this.visible = true;
