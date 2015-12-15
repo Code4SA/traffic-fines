@@ -48,8 +48,8 @@
      fit-margin-right="0.1"
      fit-margin-bottom="0.1"
      inkscape:zoom="3.5600472"
-     inkscape:cx="58.669463"
-     inkscape:cy="114.40743"
+     inkscape:cx="-23.632817"
+     inkscape:cy="215.52968"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -816,18 +816,6 @@
      id="path8463"
      inkscape:connector-curvature="0"
      transform="matrix(0.93074718,0,0,0.93074718,40.498134,45.617812)" />
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;letter-spacing:5.11000013px;word-spacing:0px;text-anchor:end;fill:#1a1a1a;fill-opacity:1;stroke:none"
-     x="170.85222"
-     y="51.108311"
-     id="text4861"
-     sodipodi:linespacing="125%"
-     transform="matrix(0.39009971,0,0,0.39009971,-1.8013208,13.629927)"><tspan
-       x="88.748909"
-       y="51.108311"
-       style="font-weight:bold;font-size:7.04947996px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;letter-spacing:0.9120332px;text-anchor:end;fill:#1a1a1a"
-       id="tspan4865">National average</tspan></text>
   <g
      id="g5273"
      transform="translate(11.978551,31.54897)">
@@ -1478,5 +1466,37 @@
        d="m 832,596.8 c -43.2,0 -78.2,35.2 -78.2,78.2 0,43.2 35,78.2 78.2,78.2 43,0 78.2,-35 78.2,-78.2 0,-43.2 -35.2,-78.2 -78.2,-78.2 z m 0,120.8 c -23.6,0 -42.6,-19 -42.6,-42.6 0,-23.402 19,-42.6 42.6,-42.6 23.401,0 42.6,19.199 42.6,42.6 0,23.6 -19,42.6 -42.6,42.6 z"
        inkscape:connector-curvature="0"
        style="fill:#333333;fill-opacity:1" />
+  </g>
+  <g
+     id="g5885"
+     transform="translate(0.4972874,-0.9609635)">
+    <text
+       transform="matrix(0.39009971,0,0,0.39009971,-2.2986082,13.135182)"
+       sodipodi:linespacing="125%"
+       id="text4861-8"
+       y="51.108311"
+       x="170.85222"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;letter-spacing:5.11000013px;word-spacing:0px;text-anchor:end;fill:#1a1a1a;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         id="tspan4865-20"
+         style="font-weight:bold;font-size:7.04947996px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;letter-spacing:0.9120332px;text-anchor:end;fill:#1a1a1a"
+         y="51.108311"
+         x="88.748909">National average</tspan><tspan
+         id="tspan5855"
+         style="font-weight:bold;font-size:7.04947996px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;letter-spacing:0.9120332px;text-anchor:end;fill:#1a1a1a"
+         y="51.108311"
+         x="88.748909" /></text>
+    <text
+       transform="matrix(0.39009971,0,0,0.39009971,-3.9636473,16.433289)"
+       sodipodi:linespacing="125%"
+       id="text4861-7"
+       y="51.108311"
+       x="170.85222"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;letter-spacing:5.11000013px;word-spacing:0px;text-anchor:end;fill:#1a1a1a;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         id="tspan4865-2"
+         style="font-weight:bold;font-size:7.04947996px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;letter-spacing:0.9120332px;text-anchor:end;fill:#1a1a1a"
+         y="51.108311"
+         x="88.748909">fines per capita</tspan></text>
   </g>
 </svg>
